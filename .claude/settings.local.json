@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(pnpm next:*)"
+      "Bash(pnpm next:*)",
+      "Bash(pnpm update:*)"
     ],
     "deny": [],
     "ask": []
