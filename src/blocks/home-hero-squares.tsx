@@ -15,18 +15,23 @@ const Content = () => {
   return (
     <div className="relative z-10">
       <h1 className="text-balance mx-auto max-w-5xl text-center text-7xl font-bold text-primary md:text-6xl">
-        Web apps that make you feel like you&apos;re in the future
+        Transform your photography business with the{" "}
+        <span className="relative z-20 inline-block rounded-xl bg-primary/20 px-4 py-2 text-primary underline decoration-primary decoration-[6px] underline-offset-[16px] backdrop-blur-sm">
+          professional
+        </span>{" "}
+        platform you deserve.
       </h1>
-      <p className="text-balance mx-auto mt-4 max-w-2xl text-center text-base text-primary">
-        We are a team of developers who are passionate about creating web apps
-        that make you feel like you&apos;re in the future.
+      <p className="text-balance mx-auto mt-4 max-w-2xl text-center text-base text-muted-foreground">
+        Streamline your workflow, deliver exceptional client experiences, and
+        grow your business with our comprehensive photography platform designed
+        by photographers, for photographers.
       </p>
       <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
         <button className="w-40 rounded-lg bg-gradient-to-b from-neutral-950 to-neutral-800 px-4 py-2 text-sm text-white">
-          Sign up
+          Start Free Trial
         </button>
         <button className="w-40 rounded-lg bg-gradient-to-b from-neutral-100 to-neutral-50 px-4 py-2 text-sm text-black">
-          Register now
+          View Features
         </button>
       </div>
     </div>

@@ -1,6 +1,8 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -24,17 +26,36 @@ const NAV_LOGO = {
   title: "Shadcnblocks.com",
 };
 const NAV_ITEMS = [
-  { name: "Home", link: "#" },
-  { name: "About", link: "#" },
-  { name: "Pricing", link: "#" },
-  { name: "Contact", link: "#" },
+  { name: "Features", link: "/features" },
+  { name: "Articles", link: "/articles" },
+  { name: "Roadmap", link: "/roadmap" },
+  { name: "Contact", link: "/contact" },
 ];
 
 const Navbar = () => {
-  const [activeItem, setActiveItem] = useState(NAV_ITEMS[0].name);
+  const pathname = usePathname();
+  const [activeItem, setActiveItem] = useState<string | null>(null);
 
   const indicatorRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLUListElement>(null);
+
+  // Determine active item based on current pathname
+  const getActiveItem = () => {
+    if (pathname === "/") {
+      return null; // No active item for home page
+    }
+    const currentNavItem = NAV_ITEMS.find((item) => {
+      if (item.link.startsWith("/#")) {
+        return false; // Don't activate hash links when not on home
+      }
+      return pathname === item.link;
+    });
+    return currentNavItem?.name || null;
+  };
+
+  useEffect(() => {
+    setActiveItem(getActiveItem());
+  }, [pathname]);
 
   useEffect(() => {
     const updateIndicator = () => {
@@ -57,16 +78,16 @@ const Navbar = () => {
   }, [activeItem]);
 
   return (
-    <section className="py-4 z-50 fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md border-b">
+    <section className="py-4 z-50 fixed top-0 left-0 right-0 bg-background/10 backdrop-blur-md border-b">
       <nav className="container flex items-center justify-between mx-auto">
         {/* Left WordMark */}
-        <a href={NAV_LOGO.url} className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Logo />
           {/*<img src={NAV_LOGO.src} className="max-h-8 w-8" alt={NAV_LOGO.alt} />*/}
           <span className="text-lg font-semibold tracking-tighter">
             {/*{NAV_LOGO.title}*/}
           </span>
-        </a>
+        </Link>
 
         <NavigationMenu className="hidden lg:block">
           <NavigationMenuList
@@ -76,16 +97,18 @@ const Navbar = () => {
             {NAV_ITEMS.map((item) => (
               <React.Fragment key={item.name}>
                 <NavigationMenuItem>
-                  <NavigationMenuLink
-                    data-nav-item={item.name}
-                    onClick={() => setActiveItem(item.name)}
-                    className={`relative cursor-pointer hover:text-primary text-sm font-medium hover:bg-transparent ${
-                      activeItem === item.name
-                        ? "text-foreground"
-                        : "text-muted-foreground"
-                    }`}
-                  >
-                    {item.name}
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href={item.link}
+                      data-nav-item={item.name}
+                      className={`relative cursor-pointer hover:text-primary text-sm font-medium bg-transparent hover:bg-transparent ${
+                        activeItem === item.name
+                          ? "text-foreground bg-transparent"
+                          : "text-muted-foreground"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               </React.Fragment>
@@ -101,15 +124,25 @@ const Navbar = () => {
         </NavigationMenu>
 
         {/* Mobile Menu Popover */}
-        <MobileNav activeItem={activeItem} setActiveItem={setActiveItem} />
+        <MobileNav activeItem={activeItem} />
 
         <div className="hidden items-center gap-2 lg:flex">
           <Button
             size="sm"
             className="h-10 py-2.5 text-sm font-normal"
             variant="link"
+            asChild
           >
-            Sign Up
+            <a href="https://app.50sq.com/register">Sign up</a>
+          </Button>
+
+          <Button
+            size="sm"
+            className="h-10 py-2.5 text-sm font-normal"
+            variant="link"
+            asChild
+          >
+            <a href="https://app.50sq.com/login">Customer Login</a>
           </Button>
         </div>
       </nav>
@@ -138,13 +171,7 @@ const AnimatedHamburger = ({ isOpen }: { isOpen: boolean }) => {
   );
 };
 
-const MobileNav = ({
-  activeItem,
-  setActiveItem,
-}: {
-  activeItem: string;
-  setActiveItem: (item: string) => void;
-}) => {
+const MobileNav = ({ activeItem }: { activeItem: string | null }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -163,9 +190,9 @@ const MobileNav = ({
           <ul className="bg-background text-foreground w-full py-4">
             {NAV_ITEMS.map((navItem, idx) => (
               <li key={idx}>
-                <a
+                <Link
                   href={navItem.link}
-                  onClick={() => setActiveItem(navItem.name)}
+                  onClick={() => setIsOpen(false)}
                   className={`text-foreground flex items-center border-l-[3px] px-6 py-4 text-sm font-medium transition-all duration-75 ${
                     activeItem === navItem.name
                       ? "border-foreground text-foreground"
@@ -173,11 +200,13 @@ const MobileNav = ({
                   }`}
                 >
                   {navItem.name}
-                </a>
+                </Link>
               </li>
             ))}
             <li className="flex flex-col px-7 py-2">
-              <Button variant="outline">Sign Up</Button>
+              <Button variant="outline" asChild>
+                <a href="https://app.50sq.com/register">Sign Up</a>
+              </Button>
             </li>
           </ul>
         </PopoverContent>
