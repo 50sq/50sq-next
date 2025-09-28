@@ -1,8 +1,5 @@
-import Features2 from "@/blocks/features2";
-import { GlobeBlock } from "@/blocks/globe-block";
 import { HomeFeatures } from "@/blocks/home-features";
 import { HomeHero } from "@/blocks/home-hero";
-import { HomeHeroSquares } from "@/blocks/home-hero-squares";
 import PhotoWorkflow from "@/blocks/photo-workflow";
 import { Fragment } from "react";
 

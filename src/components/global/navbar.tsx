@@ -3,7 +3,7 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -19,12 +19,6 @@ import {
 } from "@/components/ui/popover";
 import Logo from "./logo";
 
-const NAV_LOGO = {
-  url: "https://www.shadcnblocks.com",
-  src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
-  alt: "logo",
-  title: "Shadcnblocks.com",
-};
 const NAV_ITEMS = [
   { name: "Features", link: "/features" },
   { name: "Articles", link: "/articles" },
@@ -40,7 +34,7 @@ const Navbar = () => {
   const menuRef = useRef<HTMLUListElement>(null);
 
   // Determine active item based on current pathname
-  const getActiveItem = () => {
+  const getActiveItem = useCallback(() => {
     if (pathname === "/") {
       return null; // No active item for home page
     }
@@ -51,11 +45,11 @@ const Navbar = () => {
       return pathname === item.link;
     });
     return currentNavItem?.name || null;
-  };
+  }, [pathname]);
 
   useEffect(() => {
     setActiveItem(getActiveItem());
-  }, [pathname]);
+  }, [getActiveItem]);
 
   useEffect(() => {
     const updateIndicator = () => {

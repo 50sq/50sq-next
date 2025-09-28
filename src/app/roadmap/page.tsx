@@ -7,6 +7,7 @@ export default function Roadmap() {
 }
 
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -142,10 +143,12 @@ const Changelog = ({
                   </ul>
                 )}
                 {entry.image && (
-                  <img
+                  <Image
                     src={entry.image}
                     alt={`${entry.version} visual`}
                     className="mt-8 w-full rounded-lg object-cover"
+                    width={800}
+                    height={400}
                   />
                 )}
                 {entry.button && (

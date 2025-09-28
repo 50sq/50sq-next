@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-import { div } from "motion/react-m";
 import React from "react";
 
 export function HomeHeroSquares() {
@@ -47,9 +45,7 @@ const Background = () => {
 };
 
 const Rectangles = ({
-  className,
   stroke = "#222",
-  ...props
 }: {
   stroke?: string;
   className?: string;
