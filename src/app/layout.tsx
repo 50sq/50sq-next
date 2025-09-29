@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Footer } from "@/blocks/footer";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/global/navbar";
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`h-screen ${figtree.variable} antialiased overflow-x-hidden`}
+        className={`h-screen ${figtree.variable} antialiased overflow-x-hidden bg-background`}
       >
         <ThemeProvider
           attribute="class"
@@ -32,6 +33,7 @@ export default function RootLayout({
         >
           <Navbar />
           <main className="pt-20">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

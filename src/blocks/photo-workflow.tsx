@@ -87,7 +87,7 @@ export default function PhotoWorkflow() {
   const cardRefs = [rightCard1Ref, rightCard2Ref, rightCard3Ref, rightCard4Ref];
 
   return (
-    <section className="py-10 my-26 container mx-auto" id="workflow">
+    <section className="py-10 mt-26 container mx-auto" id="workflow">
       <div
         ref={containerRef}
         className="relative grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0"
