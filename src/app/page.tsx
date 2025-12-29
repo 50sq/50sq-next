@@ -8,7 +8,7 @@ import { ChevronIcon } from '@/components/icons/chevron-icon'
 import { CallToActionSimple } from '@/components/sections/call-to-action-simple'
 import { FAQsTwoColumnAccordion, Faq } from '@/components/sections/faqs-two-column-accordion'
 import { Feature, FeaturesTwoColumnWithDemos } from '@/components/sections/features-two-column-with-demos'
-import { NavbarWithLogoActionsAndCenteredLinks } from '@/components/sections/navbar-with-logo-actions-and-centered-links'
+import { HeroCenteredWithDemo } from '@/components/sections/hero-centered-with-demo'
 import { Plan, PricingMultiTier } from '@/components/sections/pricing-multi-tier'
 import { Stat, StatsWithGraph } from '@/components/sections/stats-with-graph'
 import { Testimonial, TestimonialThreeColumnGrid } from '@/components/sections/testimonials-three-column-grid'
@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <>
       {/* Hero */}
-      <NavbarWithLogoActionsAndCenteredLinks
+      <HeroCenteredWithDemo
         id="hero"
         eyebrow={<AnnouncementBadge href="#" text="50sq launches new gallery features" cta="Learn more" />}
         headline="Transform your photography business with the professional platform you deserve."
@@ -41,7 +41,7 @@ export default function Page() {
         }
         demo={
           <>
-            <Screenshot className="rounded-md lg:hidden" wallpaper="blue" placement="bottom-right">
+            <Screenshot className="rounded-md lg:hidden" wallpaper="brown" placement="top">
               <Image
                 src="/img/screenshots/1-left-1670-top-1408.webp"
                 alt=""
@@ -71,7 +71,7 @@ export default function Page() {
                 className="bg-black/75 not-dark:hidden max-md:hidden"
               />
             </Screenshot>
-            <Screenshot className="rounded-lg max-lg:hidden" wallpaper="blue" placement="bottom">
+            <Screenshot className="rounded-lg max-lg:hidden" wallpaper="white" placement="bottom">
               <Image
                 src="/img/screenshots/1.webp"
                 alt=""

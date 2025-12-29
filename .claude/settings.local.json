@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npm install:*)",
       "Bash(pnpm install:*)",
-      "WebFetch(domain:50sq.com)"
+      "WebFetch(domain:50sq.com)",
+      "Bash(find:*)"
     ]
   }
 }

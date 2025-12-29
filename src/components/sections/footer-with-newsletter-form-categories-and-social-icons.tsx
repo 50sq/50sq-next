@@ -17,7 +17,7 @@ export function FooterCategory({ title, children, ...props }: { title: ReactNode
 
 export function FooterLink({ href, className, ...props }: { href: string } & Omit<ComponentProps<'a'>, 'href'>) {
   return (
-    <li className={clsx('text-mist-700 dark:text-mist-400', className)}>
+    <li className={clsx('text-mist-700 dark:text-zinc-400', className)}>
       <Link href={href} {...props} />
     </li>
   )
@@ -55,7 +55,7 @@ export function NewsletterForm({
   return (
     <form className={clsx('flex max-w-sm flex-col gap-2', className)} {...props}>
       <p>{headline}</p>
-      <div className="flex flex-col gap-4 text-mist-700 dark:text-mist-400">{subheadline}</div>
+      <div className="flex flex-col gap-4 text-mist-700 dark:text-zinc-400">{subheadline}</div>
       <div className="flex items-center border-b border-mist-950/20 py-2 has-[input:focus]:border-mist-950 dark:border-white/20 dark:has-[input:focus]:border-white">
         <input
           type="email"
@@ -99,7 +99,7 @@ export function FooterWithNewsletterFormCategoriesAndSocialIcons({
             </nav>
           </div>
           <div className="flex items-center justify-between gap-10 text-sm/7">
-            <div className="text-mist-600 dark:text-mist-500">{fineprint}</div>
+            <div className="text-mist-600 dark:text-zinc-500">{fineprint}</div>
             {socialLinks && <div className="flex items-center gap-4 sm:gap-10">{socialLinks}</div>}
           </div>
         </Container>

@@ -33,7 +33,7 @@ export function PricingSingleTierTwoColumn({
             </div>
             {cta}
           </div>
-          <div className="rounded-sm bg-mist-100 p-6 sm:p-10 dark:bg-mist-950">
+          <div className="rounded-sm bg-mist-100 p-6 sm:p-10 dark:bg-zinc-950">
             <div className="flex items-baseline gap-2">
               <p className="text-[5rem]/24 font-light tracking-tight text-mist-950 sm:text-8xl/32 dark:text-white">
                 {price}
@@ -43,10 +43,10 @@ export function PricingSingleTierTwoColumn({
             <ul className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-1">
               {features.map((feature, index) => (
                 <li key={index} className="flex gap-3 text-sm/5">
-                  <span className="flex size-5 shrink-0 items-center justify-center rounded-xs bg-mist-950 dark:bg-mist-700">
+                  <span className="flex size-5 shrink-0 items-center justify-center rounded-xs bg-mist-950 dark:bg-zinc-700">
                     <CheckmarkIcon className="size-3 stroke-white" />
                   </span>
-                  <p className="text-mist-700 dark:text-mist-400">{feature}</p>
+                  <p className="text-mist-700 dark:text-zinc-400">{feature}</p>
                 </li>
               ))}
             </ul>

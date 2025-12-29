@@ -32,7 +32,7 @@ export function Testimonial({
         </div>
         <div>
           <p className="font-semibold">{name}</p>
-          <p className="text-mist-700 dark:text-mist-400">{byline}</p>
+          <p className="text-mist-700 dark:text-zinc-400">{byline}</p>
         </div>
       </figcaption>
     </figure>

@@ -19,7 +19,7 @@ export function Feature({
         {icon && <div className="flex size-3.25 h-lh items-center">{icon}</div>}
         <h3 className="font-semibold">{headline}</h3>
       </div>
-      <div className="flex flex-col gap-4 text-mist-700 dark:text-mist-400">{subheadline}</div>
+      <div className="flex flex-col gap-4 text-mist-700 dark:text-zinc-400">{subheadline}</div>
     </div>
   )
 }

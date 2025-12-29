@@ -25,7 +25,7 @@ export function TestimonialTwoColumnWithLargePhoto({
             </blockquote>
             <figcaption className="text-sm/7">
               <p className="font-semibold">{name}</p>
-              <p className="text-mist-700 dark:text-mist-400">{byline}</p>
+              <p className="text-mist-700 dark:text-zinc-400">{byline}</p>
             </figcaption>
           </div>
           <div className="flex overflow-hidden rounded-sm outline -outline-offset-1 outline-black/5 *:object-cover dark:outline-white/5">
