@@ -15,12 +15,12 @@ function plans(option: string) {
         name="Starter"
         price={option === 'Monthly' ? '$12' : '$120'}
         period={option === 'Monthly' ? '/month' : '/year'}
-        subheadline={<p>Small teams getting started with shared inboxes</p>}
+        subheadline={<p>Perfect for photographers just getting started</p>}
         features={[
-          'Shared inbox for up to 2 mailboxes',
-          'Tagging & assignment',
-          'Private notes',
-          'Automatic replies',
+          'Up to 10GB storage',
+          '5 client galleries',
+          'Basic gallery customization',
+          'Download protection',
           'Email support',
         ]}
         cta={
@@ -30,19 +30,19 @@ function plans(option: string) {
         }
       />
       <Plan
-        name="Growth"
-        price={option === 'Monthly' ? '$49' : '$490'}
+        name="Professional"
+        price={option === 'Monthly' ? '$29' : '$290'}
         period={option === 'Monthly' ? '/month' : '/year'}
-        subheadline={<p>Growing teams needing collaboration and insights</p>}
+        subheadline={<p>For growing photography businesses</p>}
         badge="Most popular"
         features={[
           'Everything in Starter',
-          'Inbox Agent',
-          'Unlimited mailboxes',
-          'Collision detection',
-          'Snippets and templates',
-          'Reporting dashboard',
-          'Slack integration',
+          'Up to 100GB storage',
+          'Unlimited galleries',
+          'Custom branding',
+          'E-commerce & print sales',
+          'Client management',
+          'Analytics dashboard',
         ]}
         cta={
           <ButtonLink href="#" size="lg">
@@ -51,18 +51,18 @@ function plans(option: string) {
         }
       />
       <Plan
-        name="Pro"
-        price={option === 'Monthly' ? '$299' : '$2990'}
+        name="Studio"
+        price={option === 'Monthly' ? '$79' : '$790'}
         period={option === 'Monthly' ? '/month' : '/year'}
-        subheadline={<p>Support-focused organizations and larger teams</p>}
+        subheadline={<p>For studios and high-volume photographers</p>}
         features={[
-          'Everything in Growth',
-          'Custom roles & permissions',
-          'Automation engine',
+          'Everything in Professional',
+          'Unlimited storage',
+          'Team collaboration',
           'API access',
-          'SLA tracking',
-          'SSO support',
-          'SOC 2 compliance',
+          'Priority support',
+          'White-label options',
+          'Advanced analytics',
         ]}
         cta={
           <SoftButtonLink href="#" size="lg">
@@ -83,8 +83,8 @@ export default function Page() {
         headline="Pricing"
         subheadline={
           <p>
-            Simplify your shared inbox, collaborate effortlessly, and give every customer a reply that feels personal,
-            even if it was written by a bot.
+            Choose the plan that fits your photography business. All plans include a 14-day free trial with no credit
+            card required.
           </p>
         }
         options={['Monthly', 'Yearly']}
@@ -193,75 +193,69 @@ export default function Page() {
       {/* Plan Comparison Table */}
       <PlanComparisonTable
         id="pricing"
-        plans={['Starter', 'Growth', 'Pro']}
+        plans={['Starter', 'Professional', 'Studio']}
         features={[
           {
-            title: 'Collaboration',
+            title: 'Storage & Galleries',
             features: [
               {
-                name: 'Shared inboxes',
-                value: { Starter: '2', Growth: 'Unlimited', Pro: 'Unlimited' },
-              },
-              { name: 'Private notes', value: true },
-              { name: 'Tagging & assignment', value: true },
-              {
-                name: 'Collision detection',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Storage',
+                value: { Starter: '10GB', Professional: '100GB', Studio: 'Unlimited' },
               },
               {
-                name: 'Real-time activity indicators',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Client galleries',
+                value: { Starter: '5', Professional: 'Unlimited', Studio: 'Unlimited' },
+              },
+              { name: 'Download protection', value: true },
+              {
+                name: 'Custom branding',
+                value: { Starter: false, Professional: true, Studio: true },
               },
               {
-                name: 'Internal chat',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'White-label options',
+                value: { Starter: false, Professional: false, Studio: true },
               },
             ],
           },
           {
-            title: 'Automation',
+            title: 'E-Commerce',
             features: [
-              { name: 'Automatic replies', value: true },
               {
-                name: 'Inbox Agent',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Print sales',
+                value: { Starter: false, Professional: true, Studio: true },
               },
               {
-                name: 'Automation engine',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Digital downloads',
+                value: { Starter: false, Professional: true, Studio: true },
               },
               {
-                name: 'Snippets and templates',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Stripe integration',
+                value: { Starter: false, Professional: true, Studio: true },
               },
               {
-                name: 'SLA tracking',
-                value: { Starter: false, Growth: false, Pro: true },
+                name: 'Custom pricing',
+                value: { Starter: false, Professional: true, Studio: true },
               },
             ],
           },
           {
-            title: 'Team Management',
+            title: 'Team & Clients',
             features: [
               {
-                name: 'Unlimited users',
-                value: { Starter: 'Up to 5', Growth: true, Pro: true },
+                name: 'Client management',
+                value: { Starter: false, Professional: true, Studio: true },
               },
               {
-                name: 'Reporting dashboard',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Team collaboration',
+                value: { Starter: false, Professional: false, Studio: true },
               },
               {
-                name: 'Slack integration',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Analytics dashboard',
+                value: { Starter: false, Professional: true, Studio: true },
               },
               {
-                name: 'Roles & permissions',
-                value: { Starter: false, Growth: false, Pro: true },
-              },
-              {
-                name: 'SSO support',
-                value: { Starter: false, Growth: false, Pro: true },
+                name: 'API access',
+                value: { Starter: false, Professional: false, Studio: true },
               },
             ],
           },
@@ -270,12 +264,12 @@ export default function Page() {
             features: [
               { name: 'Email support', value: true },
               {
-                name: 'Priority response',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Priority support',
+                value: { Starter: false, Professional: true, Studio: true },
               },
               {
                 name: 'Dedicated manager',
-                value: { Starter: false, Growth: false, Pro: true },
+                value: { Starter: false, Professional: false, Studio: true },
               },
             ],
           },
@@ -286,8 +280,8 @@ export default function Page() {
         id="testimonial"
         quote={
           <p>
-            Ever since we started using Oatmeal, our customer satisfaction scores have skyrocketed. The personal touch
-            that their human-AI hybrid support provides is unparalleled.
+            Switching to 50sq was the best decision for my photography business. The Professional plan gives me
+            everything I need at a price that makes sense.
           </p>
         }
         img={
@@ -299,38 +293,38 @@ export default function Page() {
             height={1000}
           />
         }
-        name="Lynn Marshall"
-        byline="Founder at Pine Labs"
+        name="Marcus Chen"
+        byline="Portrait Photographer"
       />
       {/* FAQs */}
       <FAQsAccordion id="faqs" headline="Questions & Answers">
         <Faq
           id="faq-1"
           question="Do I need a credit card to start the free trial?"
-          answer="Yes, but don't worry, you won't be charged until the trial period is over. We won't send you an email reminding you when this happens because we are really hoping you'll forget and we can keep charging you until your cards expires"
+          answer="No credit card required! Start your 14-day free trial and explore all features. We'll only ask for payment details when you're ready to continue."
         />
         <Faq
           id="faq-2"
-          question="Can my whole team use the same inbox?"
-          answer="Yes, the more the merrier! Oatmeal works best when your entire company has access. We will charge you per additional seat, but we won't tell you about this until you get your invoice."
+          question="Can I upgrade or downgrade my plan?"
+          answer="Absolutely! You can change your plan at any time. Upgrades take effect immediately, and downgrades will apply at your next billing cycle."
         />
         <Faq
           id="faq-3"
-          question="Is the AI agent actually a bunch of people in India?"
-          answer="Not just India! We have people in lots of countries around the world pretending to be an AI, including some that are currently under sanctions, so we can't legally mention them here."
+          question="What happens if I exceed my storage limit?"
+          answer="We'll notify you when you're approaching your limit. You can upgrade to a higher plan or purchase additional storage without changing plans."
         />
         <Faq
           id="faq-4"
-          question="Does Oatmeal replace my email client?"
-          answer="Absolutely. The idea is that we transition you away from email entirely, so you become completely dependent on our service. Like a parasite living off a host."
+          question="Do you offer discounts for annual billing?"
+          answer="Yes! Save up to 17% when you choose annual billing. The yearly price is equivalent to 10 months of monthly billing."
         />
       </FAQsAccordion>
       {/* Call To Action */}
       <CallToActionSimpleCentered
         id="call-to-action"
-        headline="Have anymore questions?"
+        headline="Have any questions?"
         subheadline={
-          <p>Chat to someone on our sales team, who will make promises about our roadmap that we won't keep.</p>
+          <p>Our team is here to help you find the perfect plan for your photography business.</p>
         }
         cta={
           <div className="flex items-center gap-4">

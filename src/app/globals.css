@@ -17,6 +17,20 @@
   --color-mist-800: oklch(27.5% 0.011 216.9);
   --color-mist-900: oklch(21.8% 0.008 223.9);
   --color-mist-950: oklch(14.8% 0.004 228.8);
+
+  --color-yellow-50: oklch(98.5% 0.035 95);
+  --color-yellow-100: oklch(96.5% 0.075 93);
+  --color-yellow-200: oklch(93% 0.12 92);
+  --color-yellow-300: oklch(89% 0.155 91);
+  --color-yellow-400: oklch(86% 0.175 90);
+  --color-yellow-500: oklch(85.5% 0.185 90);
+  --color-yellow-600: oklch(75% 0.165 85);
+  --color-yellow-700: oklch(63% 0.145 80);
+  --color-yellow-800: oklch(50% 0.115 75);
+  --color-yellow-900: oklch(40% 0.085 70);
+  --color-yellow-950: oklch(28% 0.055 65);
+
+  --color-yellow: var(--color-yellow-500);
 }
 
 @layer base {

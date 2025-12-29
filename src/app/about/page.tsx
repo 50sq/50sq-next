@@ -13,11 +13,11 @@ export default function Page() {
       {/* Hero */}
       <HeroLeftAlignedWithPhoto
         id="hero"
-        headline="Your customer success is our mission."
+        headline="Built by photographers, for photographers."
         subheadline={
           <p>
-            We're on a mission to take the human element completely out of customer support — so your team can focus on
-            what matters most, profitability.
+            We're on a mission to help photographers spend less time on admin and more time doing what they love —
+            capturing beautiful moments.
           </p>
         }
         photo={
@@ -34,25 +34,24 @@ export default function Page() {
       <StatsWithGraph
         id="stats"
         eyebrow="Built for scale"
-        headline="The inbox powering customer conversations everywhere."
+        headline="The platform powering professional photographers everywhere."
         subheadline={
           <p>
-            Oatmeal helps teams deliver personal, organized, and fast customer support across the world. From small
-            startups to enterprise teams, we process millions of messages each month — using a massive network of low
-            wage workers stationed around the globe.
+            50sq helps photographers deliver stunning galleries, manage clients, and grow their business. From solo
+            shooters to large studios, we handle millions of photos every month.
           </p>
         }
       >
-        <Stat stat="2M+" text="Emails manually processed every week across thousands of teams." />
-        <Stat stat="99.98%" text="Uptime — because your customers never stop complaining." />
+        <Stat stat="10M+" text="Photos delivered to clients across thousands of galleries." />
+        <Stat stat="99.99%" text="Uptime — because your clients expect nothing less." />
       </StatsWithGraph>
       {/* Testimonial */}
       <TestimonialTwoColumnWithLargePhoto
         id="testimonial"
         quote={
           <p>
-            Ever since we started using Oatmeal, our customer satisfaction scores have skyrocketed. The personal touch
-            that their human-AI hybrid support provides is unparalleled.
+            50sq has transformed how I run my photography business. The beautiful galleries and seamless client
+            experience have helped me book more clients than ever before.
           </p>
         }
         img={
@@ -64,8 +63,8 @@ export default function Page() {
             height={1000}
           />
         }
-        name="Lynn Marshall"
-        byline="Founder at Pine Labs"
+        name="Sarah Mitchell"
+        byline="Wedding Photographer"
       />
       {/* Team */}
       <TeamFourColumnGrid
@@ -73,8 +72,8 @@ export default function Page() {
         headline="Our leadership team"
         subheadline={
           <p>
-            Oatmeals's leadership team combines decades of experience in private equity, where they honed their skills
-            in cost-cutting and maximizing shareholder value.
+            50sq's team combines decades of experience in photography and technology, united by a passion for helping
+            photographers succeed.
           </p>
         }
       >
@@ -186,9 +185,9 @@ export default function Page() {
       {/* Call To Action */}
       <CallToActionSimple
         id="call-to-action"
-        headline="Have anymore questions?"
+        headline="Have any questions?"
         subheadline={
-          <p>Chat to someone on our sales team, who will make promises about our roadmap that we won't keep.</p>
+          <p>Our team is here to help you get started and make the most of 50sq for your photography business.</p>
         }
         cta={
           <div className="flex items-center gap-4">

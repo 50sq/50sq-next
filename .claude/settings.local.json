@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(pnpm install:*)"
+      "Bash(pnpm install:*)",
+      "WebFetch(domain:50sq.com)"
     ]
   }
 }
