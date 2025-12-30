@@ -173,7 +173,7 @@ export default function Page() {
                 </p>
               }
               cta={
-                <Link href="#">
+                <Link href="/features/gallery-management">
                   See how it works <ArrowNarrowRightIcon />
                 </Link>
               }
@@ -239,15 +239,15 @@ export default function Page() {
                   />
                 </Screenshot>
               }
-              headline="Client Galleries"
+              headline="Lightning-Fast Uploading"
               subheadline={
                 <p>
-                  Password-protected galleries with branded professional links. Deliver stunning work your clients will
-                  love.
+                  Upload thousands of photos in minutes with parallel uploads, automatic optimization, and smart
+                  compression.
                 </p>
               }
               cta={
-                <Link href="#">
+                <Link href="/features/uploading">
                   See how it works <ArrowNarrowRightIcon />
                 </Link>
               }
