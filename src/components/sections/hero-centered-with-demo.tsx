@@ -27,7 +27,7 @@ export function HeroCenteredWithDemo({
         <div className="flex flex-col items-center gap-32">
           <div className="flex flex-col items-center gap-6">
             {eyebrow}
-            <Heading className="max-w-5xl text-center">{headline}</Heading>
+            <Heading className="max-w-5xl text-center text-yellow-400">{headline}</Heading>
             <Text size="lg" className="flex max-w-3xl flex-col gap-4 text-center">
               {subheadline}
             </Text>

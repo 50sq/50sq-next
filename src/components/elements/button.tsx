@@ -23,8 +23,8 @@ export function Button({
       className={clsx(
         'inline-flex shrink-0 items-center justify-center gap-1 rounded-full text-sm/7 font-medium',
         color === 'dark/light' &&
-          'bg-mist-950 text-white hover:bg-mist-800 dark:bg-zinc-200 dark:text-zinc-950 dark:hover:bg-zinc-100',
-        color === 'light' && 'hover bg-white text-mist-950 hover:bg-mist-100 dark:bg-zinc-100 dark:hover:bg-white',
+          'bg-zinc-950 text-white hover:bg-zinc-800 dark:bg-zinc-200 dark:text-zinc-950 dark:hover:bg-zinc-100',
+        color === 'light' && 'hover bg-white text-zinc-950 hover:bg-zinc-100 dark:bg-zinc-100 dark:hover:bg-white',
         sizes[size],
         className,
       )}
@@ -50,8 +50,8 @@ export function ButtonLink({
       className={clsx(
         'inline-flex shrink-0 items-center justify-center gap-1 rounded-full text-sm/7 font-medium',
         color === 'dark/light' &&
-          'bg-mist-950 text-white hover:bg-mist-800 dark:bg-zinc-200 dark:text-zinc-950 dark:hover:bg-zinc-100',
-        color === 'light' && 'hover bg-white text-mist-950 hover:bg-mist-100 dark:bg-zinc-100 dark:hover:bg-white',
+          'bg-zinc-950 text-white hover:bg-zinc-800 dark:bg-zinc-200 dark:text-zinc-950 dark:hover:bg-zinc-100',
+        color === 'light' && 'hover bg-white text-zinc-950 hover:bg-zinc-100 dark:bg-zinc-100 dark:hover:bg-white',
         sizes[size],
         className,
       )}
@@ -72,7 +72,7 @@ export function SoftButton({
     <button
       type={type}
       className={clsx(
-        'inline-flex shrink-0 items-center justify-center gap-1 rounded-full bg-mist-950/10 text-sm/7 font-medium text-mist-950 hover:bg-mist-950/15 dark:bg-white/10 dark:text-white dark:hover:bg-white/20',
+        'inline-flex shrink-0 items-center justify-center gap-1 rounded-full bg-zinc-950/10 text-sm/7 font-medium text-zinc-950 hover:bg-zinc-950/15 dark:bg-white/10 dark:text-white dark:hover:bg-white/20',
         sizes[size],
         className,
       )}
@@ -94,7 +94,7 @@ export function SoftButtonLink({
     <Link
       href={href}
       className={clsx(
-        'inline-flex shrink-0 items-center justify-center gap-1 rounded-full bg-mist-950/10 text-sm/7 font-medium text-mist-950 hover:bg-mist-950/15 dark:bg-white/10 dark:text-white dark:hover:bg-white/20',
+        'inline-flex shrink-0 items-center justify-center gap-1 rounded-full bg-zinc-950/10 text-sm/7 font-medium text-zinc-950 hover:bg-zinc-950/15 dark:bg-white/10 dark:text-white dark:hover:bg-white/20',
         sizes[size],
         className,
       )}
@@ -118,7 +118,7 @@ export function PlainButton({
       type={type}
       className={clsx(
         'inline-flex shrink-0 items-center justify-center gap-2 rounded-full text-sm/7 font-medium',
-        color === 'dark/light' && 'text-mist-950 hover:bg-mist-950/10 dark:text-white dark:hover:bg-white/10',
+        color === 'dark/light' && 'text-zinc-950 hover:bg-zinc-950/10 dark:text-white dark:hover:bg-white/10',
         color === 'light' && 'text-white hover:bg-white/15 dark:hover:bg-white/10',
         sizes[size],
         className,
@@ -144,7 +144,7 @@ export function PlainButtonLink({
       href={href}
       className={clsx(
         'inline-flex shrink-0 items-center justify-center gap-2 rounded-full text-sm/7 font-medium',
-        color === 'dark/light' && 'text-mist-950 hover:bg-mist-950/10 dark:text-white dark:hover:bg-white/10',
+        color === 'dark/light' && 'text-zinc-950 hover:bg-zinc-950/10 dark:text-white dark:hover:bg-white/10',
         color === 'light' && 'text-white hover:bg-white/15 dark:hover:bg-white/10',
         sizes[size],
         className,
