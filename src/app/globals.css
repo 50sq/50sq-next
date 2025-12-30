@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-display: 'Familjen Grotesk', sans-serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Clarity City', system-ui, sans-serif;
+  --font-sans: 'Clarity City', system-ui, sans-serif;
 
   --color-yellow-50: oklch(98.5% 0.035 95);
   --color-yellow-100: oklch(96.5% 0.075 93);
@@ -32,5 +32,18 @@
     @variant dark {
       background-color: var(--color-zinc-950);
     }
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url('/img/backgrounds/squares.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    pointer-events: none;
   }
 }

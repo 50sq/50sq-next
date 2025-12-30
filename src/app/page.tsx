@@ -106,7 +106,7 @@ export default function Page() {
           <>
             <Feature
               demo={
-                <Screenshot wallpaper="purple" placement="bottom-right">
+                <Screenshot wallpaper="white" placement="bottom-right">
                   <Image
                     src="/img/screenshots/1-left-1000-top-800.webp"
                     alt=""
@@ -180,7 +180,7 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="blue" placement="bottom-left">
+                <Screenshot wallpaper="white" placement="bottom-left">
                   <Image
                     src="/img/screenshots/1-right-1000-top-800.webp"
                     alt=""
@@ -248,6 +248,80 @@ export default function Page() {
               }
               cta={
                 <Link href="/features/uploading">
+                  See how it works <ArrowNarrowRightIcon />
+                </Link>
+              }
+            />
+            <Feature
+              demo={
+                <Screenshot wallpaper="white" placement="top-right">
+                  <Image
+                    src="/img/screenshots/1-left-1000-top-800.webp"
+                    alt=""
+                    className="bg-white/75 sm:hidden dark:hidden"
+                    width={1000}
+                    height={800}
+                  />
+                  <Image
+                    src="/img/screenshots/1-color-mist-left-1000-top-800.webp"
+                    alt=""
+                    className="bg-black/75 not-dark:hidden sm:hidden"
+                    width={1000}
+                    height={800}
+                  />
+                  <Image
+                    src="/img/screenshots/1-left-1800-top-660.webp"
+                    alt=""
+                    className="bg-white/75 max-sm:hidden lg:hidden dark:hidden"
+                    width={1800}
+                    height={660}
+                  />
+                  <Image
+                    src="/img/screenshots/1-color-mist-left-1800-top-660.webp"
+                    alt=""
+                    className="bg-black/75 not-dark:hidden max-sm:hidden lg:hidden"
+                    width={1800}
+                    height={660}
+                  />
+                  <Image
+                    src="/img/screenshots/1-left-1300-top-1300.webp"
+                    alt=""
+                    className="bg-white/75 max-lg:hidden xl:hidden dark:hidden"
+                    width={1300}
+                    height={1300}
+                  />
+                  <Image
+                    src="/img/screenshots/1-color-mist-left-1300-top-1300.webp"
+                    alt=""
+                    className="bg-black/75 not-dark:hidden max-lg:hidden xl:hidden"
+                    width={1300}
+                    height={1300}
+                  />
+                  <Image
+                    src="/img/screenshots/1-left-1800-top-1250.webp"
+                    alt=""
+                    className="bg-white/75 max-xl:hidden dark:hidden"
+                    width={1800}
+                    height={1250}
+                  />
+                  <Image
+                    src="/img/screenshots/1-color-mist-left-1800-top-1250.webp"
+                    alt=""
+                    className="bg-black/75 not-dark:hidden max-xl:hidden"
+                    width={1800}
+                    height={1250}
+                  />
+                </Screenshot>
+              }
+              headline="Lightroom Classic Plugin"
+              subheadline={
+                <p>
+                  Export directly from Lightroom Classic to 50sq. Create galleries, apply tags, and organize your
+                  uploads without leaving your editing workflow.
+                </p>
+              }
+              cta={
+                <Link href="/features/lightroom-plugin">
                   See how it works <ArrowNarrowRightIcon />
                 </Link>
               }
