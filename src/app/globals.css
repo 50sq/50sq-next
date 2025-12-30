@@ -39,11 +39,16 @@
     position: fixed;
     inset: 0;
     z-index: -1;
-    background-image: url('/img/backgrounds/squares.svg');
+    background-image: url('/img/backgrounds/squares-light.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.15;
+    opacity: 0.3;
     pointer-events: none;
+  }
+
+  .dark body::before {
+    background-image: url('/img/backgrounds/squares.svg');
+    opacity: 0.35;
   }
 }
