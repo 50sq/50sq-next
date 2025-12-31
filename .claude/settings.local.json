@@ -4,7 +4,10 @@
       "Bash(npm install:*)",
       "Bash(pnpm install:*)",
       "WebFetch(domain:50sq.com)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "WebFetch(domain:ogkit.dev)",
+      "WebSearch",
+      "WebFetch(domain:github.com)"
     ]
   }
 }

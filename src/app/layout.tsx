@@ -8,6 +8,24 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: '50sq - Professional Photo Management for Photographers',
+  description:
+    'Lightning-fast uploads, smart organization, and secure client galleries. The professional photo platform you deserve.',
+  metadataBase: new URL('https://50sq.com'),
+  openGraph: {
+    title: '50sq - Professional Photo Management for Photographers',
+    description:
+      'Lightning-fast uploads, smart organization, and secure client galleries. The professional photo platform you deserve.',
+    url: 'https://50sq.com',
+    siteName: '50sq',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '50sq - Professional Photo Management for Photographers',
+    description:
+      'Lightning-fast uploads, smart organization, and secure client galleries. The professional photo platform you deserve.',
+  },
 }
 
 export default function RootLayout({
