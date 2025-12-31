@@ -24,14 +24,14 @@ export function Plan({
   return (
     <div
       className={clsx(
-        'flex flex-col justify-between gap-6 rounded-xl bg-zinc-950/2.5 p-6 sm:items-start dark:bg-white/5',
+        'flex flex-col justify-between gap-6 rounded-xl bg-zinc-950/2.5 p-6 sm:items-start dark:bg-zinc-950/90',
         className,
       )}
     >
       <div className="self-stretch">
         <div className="flex items-center justify-between">
           {badge && (
-            <div className="order-last inline-flex rounded-full bg-zinc-950/10 px-2 text-xs/6 font-medium text-zinc-950 dark:bg-white/10 dark:text-white">
+            <div className="order-last inline-flex rounded-full bg-zinc-950/10 px-2 text-xs/6 font-medium text-yellow-600 dark:bg-white/10 dark:text-yellow-500">
               {badge}
             </div>
           )}
@@ -46,7 +46,7 @@ export function Plan({
         <ul className="mt-4 space-y-2 text-sm/6 text-zinc-700 dark:text-zinc-400">
           {features.map((feature, index) => (
             <li key={index} className="flex gap-4">
-              <CheckmarkIcon className="h-lh shrink-0 stroke-zinc-950 dark:stroke-white" />
+              <CheckmarkIcon className="h-lh shrink-0 stroke-green-600 dark:stroke-green-500" />
               <p>{feature}</p>
             </li>
           ))}

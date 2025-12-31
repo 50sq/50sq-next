@@ -38,19 +38,10 @@ export default function RootLayout({
         <ThemeProvider>
           <NavbarWithLogoActionsAndCenteredLinks
             id="navbar"
-            links={
-              <>
-                <NavbarLink href="/pricing">Pricing</NavbarLink>
-                <NavbarLink href="/about">About</NavbarLink>
-                <NavbarLink href="#">Docs</NavbarLink>
-                <NavbarLink href="#" className="sm:hidden">
-                  Log in
-                </NavbarLink>
-              </>
-            }
+            links={<></>}
             logo={
               <NavbarLogo href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-8" viewBox="0 0 50 50">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-10" viewBox="0 0 50 50">
                   <path
                     fill="currentColor"
                     className="text-black dark:text-white"
@@ -63,10 +54,9 @@ export default function RootLayout({
             actions={
               <>
                 <ThemeToggle />
-                <PlainButtonLink href="#" className="max-sm:hidden">
+                <PlainButtonLink href="https://app.50sq.com/login" className="max-sm:hidden">
                   Log in
                 </PlainButtonLink>
-                <ButtonLink href="#">Get started</ButtonLink>
               </>
             }
           />
