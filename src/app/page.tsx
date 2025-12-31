@@ -4,7 +4,7 @@ import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon
 
 export default function Page() {
   return (
-    <section className="flex min-h-[calc(100vh-200px)] items-center">
+    <section className="flex h-[calc(100svh-5.25rem)] items-start pt-[20%] xl:pt-32">
       <Container className="flex flex-col items-center text-center">
         <p className="text-sm font-medium text-yellow-600 dark:text-yellow-500">Coming Soon</p>
         <h1 className="mt-4 max-w-3xl text-4xl font-medium tracking-tight text-zinc-950 sm:text-5xl lg:text-6xl dark:text-white">
