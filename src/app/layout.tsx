@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: '50sq - Professional Photo Management for Photographers',
   description:
     'Lightning-fast uploads, smart organization, and secure client galleries. The professional photo platform you deserve.',
-  metadataBase: new URL('https://50sq.com'),
+  metadataBase: new URL('https://50squared.com'),
   openGraph: {
     title: '50sq - Professional Photo Management for Photographers',
     description:
       'Lightning-fast uploads, smart organization, and secure client galleries. The professional photo platform you deserve.',
-    url: 'https://50sq.com',
+    url: 'https://50squared.com',
     siteName: '50sq',
     locale: 'en_US',
     type: 'website',
@@ -58,7 +58,7 @@ export default function RootLayout({
             actions={
               <>
                 <ThemeToggle />
-                <PlainButtonLink href="https://app.50sq.com/login" className="max-sm:hidden">
+                <PlainButtonLink href="https://app.50squared.com/login" className="max-sm:hidden">
                   Log in
                 </PlainButtonLink>
               </>
