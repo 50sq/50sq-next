@@ -1,7 +1,10 @@
 import { PlainButtonLink } from '@/components/elements/button'
 import { Main } from '@/components/elements/main'
 import { ThemeToggle } from '@/components/elements/theme-toggle'
-import { NavbarLogo, NavbarWithLogoActionsAndCenteredLinks } from '@/components/sections/navbar-with-logo-actions-and-centered-links'
+import {
+  NavbarLogo,
+  NavbarWithLogoActionsAndCenteredLinks,
+} from '@/components/sections/navbar-with-logo-actions-and-centered-links'
 import { ThemeProvider } from '@/components/theme-provider'
 import type { Metadata } from 'next'
 import './globals.css'
@@ -9,12 +12,12 @@ import './globals.css'
 export const metadata: Metadata = {
   title: '50sq - Professional Photo Management for Photographers',
   description:
-    'Lightning-fast uploads, smart organization, and secure client galleries. The professional photo platform you deserve.',
+    'Lightning-fast uploads, smart organization, and secure client galleries. The photo platform you deserve.',
   metadataBase: new URL('https://50squared.com'),
   openGraph: {
     title: '50sq - Professional Photo Management for Photographers',
     description:
-      'Lightning-fast uploads, smart organization, and secure client galleries. The professional photo platform you deserve.',
+      'Lightning-fast uploads, smart organization, and secure client galleries. The photo platform you deserve.',
     url: 'https://50squared.com',
     siteName: '50sq',
     locale: 'en_US',
@@ -24,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '50sq - Professional Photo Management for Photographers',
     description:
-      'Lightning-fast uploads, smart organization, and secure client galleries. The professional photo platform you deserve.',
+      'Lightning-fast uploads, smart organization, and secure client galleries. The photo platform you deserve.',
   },
 }
 
@@ -58,7 +61,7 @@ export default function RootLayout({
             actions={
               <>
                 <ThemeToggle />
-                <PlainButtonLink href="https://app.50squared.com/login" className="max-sm:hidden">
+                <PlainButtonLink href="https://app.50sq.com/login" className="max-sm:hidden">
                   Log in
                 </PlainButtonLink>
               </>

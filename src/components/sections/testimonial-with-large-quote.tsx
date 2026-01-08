@@ -19,7 +19,7 @@ export function TestimonialLargeQuote({
     <section className={clsx('py-16', className)} {...props}>
       <Container>
         <figure className="text-zinc-950 dark:text-white">
-          <blockquote className="mx-auto flex max-w-240 flex-col gap-4 text-center font-display text-3xl/10 font-medium tracking-tight text-pretty *:first:before:content-['“'] *:last:after:content-['”'] sm:text-5xl/14">
+          <blockquote className="mx-auto flex max-w-240 flex-col gap-3 text-center font-display text-3xl/10 font-medium tracking-tight text-pretty *:first:before:content-['“'] *:last:after:content-['”'] sm:text-3xl/10">
             {quote}
           </blockquote>
           <figcaption className="mt-16 flex flex-col items-center">

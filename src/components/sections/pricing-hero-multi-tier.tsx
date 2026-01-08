@@ -27,14 +27,14 @@ export function Plan({
   return (
     <div
       className={clsx(
-        'flex flex-col justify-between gap-6 rounded-xl bg-zinc-950/2.5 p-6 sm:items-start dark:bg-white/5',
+        'flex flex-col justify-between gap-6 rounded-xl bg-zinc-950/2.5 p-6 sm:items-start dark:bg-black/50',
         className,
       )}
     >
       <div className="self-stretch">
         <div className="flex items-center justify-between">
           {badge && (
-            <div className="order-last inline-flex rounded-full bg-zinc-950/10 px-2 text-xs/6 font-medium text-zinc-950 dark:bg-white/10 dark:text-white">
+            <div className="order-last inline-flex rounded-full bg-zinc-950/10 px-2 text-xs/6 font-medium text-zinc-950 dark:bg-white/10 dark:text-yellow-400">
               {badge}
             </div>
           )}
@@ -42,7 +42,7 @@ export function Plan({
           <h3 className="text-2xl/8 tracking-tight text-zinc-950 dark:text-white">{name}</h3>
         </div>
         <p className="mt-1 inline-flex gap-1 text-base/7">
-          <span className="text-zinc-950 dark:text-white">{price}</span>
+          <span className="text-zinc-950 dark:text-yellow-400">{price}</span>
           {period && <span className="text-zinc-500 dark:text-zinc-500">{period}</span>}
         </p>
         <div className="mt-4 flex flex-col gap-4 text-sm/6 text-zinc-700 dark:text-zinc-400">{subheadline}</div>

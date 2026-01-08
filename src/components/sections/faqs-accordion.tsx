@@ -50,7 +50,7 @@ export function FAQsAccordion({
   subheadline?: ReactNode
 } & ComponentProps<'section'>) {
   return (
-    <section className={clsx('py-16', className)} {...props}>
+    <section className={clsx('py-16 dark:bg-black', className)} {...props}>
       <div className="mx-auto flex max-w-3xl flex-col gap-6 px-6 lg:max-w-5xl lg:px-10">
         <div className="flex flex-col gap-6">
           <Subheading>{headline}</Subheading>

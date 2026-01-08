@@ -16,7 +16,7 @@ export function Feature({
   return (
     <div className={clsx('flex flex-col gap-2 text-sm/7', className)} {...props}>
       <div className="flex items-start gap-3 text-zinc-950 dark:text-white">
-        {icon && <div className="flex size-3.25 h-lh items-center">{icon}</div>}
+        {icon && <div className="flex size-3.25 h-lh items-center text-yellow-500">{icon}</div>}
         <h3 className="font-semibold">{headline}</h3>
       </div>
       <div className="flex flex-col gap-4 text-zinc-700 dark:text-zinc-400">{subheadline}</div>
