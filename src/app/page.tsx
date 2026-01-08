@@ -10,11 +10,11 @@ import { PhotoIcon } from '@/components/icons/photo-icon'
 import { UserCircleIcon } from '@/components/icons/user-circle-icon'
 import { CallToActionSimpleCentered } from '@/components/sections/call-to-action-simple-centered'
 import { Faq, FAQsAccordion } from '@/components/sections/faqs-accordion'
-import { Feature, FeaturesThreeColumn } from '@/components/sections/features-three-column'
 import {
-  Feature as StackedFeature,
   FeaturesStackedAlternatingWithDemos,
+  Feature as StackedFeature,
 } from '@/components/sections/features-stacked-alternating-with-demos'
+import { Feature, FeaturesThreeColumn } from '@/components/sections/features-three-column'
 import { FooterLink, FooterWithLinksAndSocialIcons } from '@/components/sections/footer-with-links-and-social-icons'
 import { HeroCenteredWithDemo } from '@/components/sections/hero-centered-with-demo'
 import { Plan, PricingHeroMultiTier } from '@/components/sections/pricing-hero-multi-tier'
@@ -230,7 +230,7 @@ export default function Page() {
         }
         img={
           <Image
-            src="/img/avatars/16-h-1000-w-1400.webp"
+            src="/img/avatars/michaeldyrynda.jpg"
             alt="Michael Dyrynda"
             width={1400}
             height={1000}
