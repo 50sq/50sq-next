@@ -23,6 +23,7 @@ function plans(option: string) {
         name="Starter Plan - 100 GB"
         price={option === 'Monthly' ? '$15' : '$150'}
         period={option === 'Monthly' ? '/month' : '/year'}
+        subheadline={<></>}
         features={[
           '100 GB Archive Storage',
           'Unlimited Galleries & Albums',
@@ -44,6 +45,7 @@ function plans(option: string) {
         name="Plus Plan - 500 GB"
         price={option === 'Monthly' ? '$30' : '$300'}
         period={option === 'Monthly' ? '/month' : '/year'}
+        subheadline={<></>}
         badge="Most Popular"
         features={[
           'Everything In Starter Plan',
@@ -64,6 +66,7 @@ function plans(option: string) {
         name="Pro Plan - Unlimited"
         price={option === 'Monthly' ? '$50' : '$500'}
         period={option === 'Monthly' ? '/month' : '/year'}
+        subheadline={<></>}
         features={[
           'Everything In Plus Plan',
           'Unlimited Storage',
