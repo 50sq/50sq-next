@@ -15,11 +15,11 @@ export function Feature({
   cta: ReactNode
 } & Omit<ComponentProps<'div'>, 'children'>) {
   return (
-    <div className={clsx('rounded-lg bg-zinc-950/2.5 p-2 dark:bg-zinc-950/90', className)}>
+    <div className={clsx('flex flex-col rounded-lg bg-zinc-950/2.5 p-2 dark:bg-zinc-950/90', className)}>
       <div className="relative overflow-hidden rounded-sm dark:after:absolute dark:after:inset-0 dark:after:rounded-sm dark:after:outline-1 dark:after:-outline-offset-1 dark:after:outline-white/10">
         {demo}
       </div>
-      <div className="flex flex-col gap-4 p-6 sm:p-10 lg:p-6">
+      <div className="flex flex-1 flex-col justify-between gap-4 p-6 sm:p-10 lg:p-6">
         <div>
           <h3 className="text-base/8 font-medium text-zinc-950 dark:text-white">{headline}</h3>
           <div className="mt-2 flex flex-col gap-4 text-sm/7 text-zinc-700 dark:text-zinc-400">{subheadline}</div>

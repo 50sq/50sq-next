@@ -25,12 +25,12 @@ export function Wallpaper({
   color,
   className,
   ...props
-}: { color: 'green' | 'blue' | 'purple' | 'brown' | 'black' | 'white' } & ComponentProps<'div'>) {
+}: { color: 'green' | 'blue' | 'purple' | 'brown' | 'black' | 'white' | 'yellow' } & ComponentProps<'div'>) {
   return (
     <div
       data-color={color}
       className={clsx(
-        'relative overflow-hidden bg-linear-to-b data-[color=blue]:from-[#637c86] data-[color=blue]:to-[#778599] data-[color=brown]:from-[#8d7359] data-[color=brown]:to-[#765959] data-[color=green]:from-[#9ca88f] data-[color=green]:to-[#596352] data-[color=purple]:from-[#7b627d] data-[color=purple]:to-[#8f6976] data-[color=white]:from-[#dddddd] data-[color=white]:to-[#000000] dark:data-[color=blue]:from-[#243a42] dark:data-[color=blue]:to-[#232f40] dark:data-[color=brown]:from-[#382d23] dark:data-[color=brown]:to-[#3d2323] dark:data-[color=green]:from-[#333a2b] dark:data-[color=green]:to-[#26361b] dark:data-[color=purple]:from-[#412c42] dark:data-[color=purple]:to-[#3c1a26]',
+        'relative overflow-hidden bg-linear-to-b data-[color=blue]:from-[#637c86] data-[color=blue]:to-[#778599] data-[color=brown]:from-[#8d7359] data-[color=brown]:to-[#765959] data-[color=green]:from-[#9ca88f] data-[color=green]:to-[#596352] data-[color=purple]:from-[#7b627d] data-[color=purple]:to-[#8f6976] data-[color=white]:from-[#dddddd] data-[color=white]:to-[#000000] data-[color=yellow]:from-[#c9a227] data-[color=yellow]:to-[#8b7355] dark:data-[color=blue]:from-[#243a42] dark:data-[color=blue]:to-[#232f40] dark:data-[color=brown]:from-[#382d23] dark:data-[color=brown]:to-[#3d2323] dark:data-[color=green]:from-[#333a2b] dark:data-[color=green]:to-[#26361b] dark:data-[color=purple]:from-[#412c42] dark:data-[color=purple]:to-[#3c1a26] dark:data-[color=yellow]:from-[#3d3520] dark:data-[color=yellow]:to-[#2d2815]',
         className,
       )}
       {...props}

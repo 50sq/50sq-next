@@ -1,5 +1,6 @@
 import { ButtonLink, PlainButtonLink, SoftButtonLink } from '@/components/elements/button'
 import { Eyebrow } from '@/components/elements/eyebrow'
+import { Screenshot } from '@/components/elements/screenshot'
 import { ChevronIcon } from '@/components/icons/chevron-icon'
 import { CloudArrowUpIcon } from '@/components/icons/cloud-arrow-up-icon'
 import { FolderIcon } from '@/components/icons/folder-icon'
@@ -10,6 +11,10 @@ import { UserCircleIcon } from '@/components/icons/user-circle-icon'
 import { CallToActionSimpleCentered } from '@/components/sections/call-to-action-simple-centered'
 import { Faq, FAQsAccordion } from '@/components/sections/faqs-accordion'
 import { Feature, FeaturesThreeColumn } from '@/components/sections/features-three-column'
+import {
+  Feature as StackedFeature,
+  FeaturesStackedAlternatingWithDemos,
+} from '@/components/sections/features-stacked-alternating-with-demos'
 import { FooterLink, FooterWithLinksAndSocialIcons } from '@/components/sections/footer-with-links-and-social-icons'
 import { HeroCenteredWithDemo } from '@/components/sections/hero-centered-with-demo'
 import { Plan, PricingHeroMultiTier } from '@/components/sections/pricing-hero-multi-tier'
@@ -96,7 +101,7 @@ export default function Page() {
         headline="Photography software that doesn't slow you down."
         subheadline={
           <p>
-            Lightning-fast up loads, smart organization, and secure client galleries. Everything you need to run your
+            Lightning-fast uploads, smart organization, and secure client galleries. Everything you need to run your
             photography business all in one place.
           </p>
         }
@@ -109,6 +114,24 @@ export default function Page() {
               Learn more <ChevronIcon />
             </PlainButtonLink>
           </div>
+        }
+        demo={
+          <Screenshot wallpaper="yellow" placement="bottom" className="w-full rounded-lg">
+            <Image
+              src="/img/screenshots/app-light.jpg"
+              alt="50sq application"
+              width={1920}
+              height={1080}
+              className="w-full dark:hidden"
+            />
+            <Image
+              src="/img/screenshots/app-dark.jpg"
+              alt="50sq application"
+              width={1920}
+              height={1080}
+              className="hidden w-full dark:block"
+            />
+          </Screenshot>
         }
       />
 
@@ -154,6 +177,45 @@ export default function Page() {
         }
       />
 
+      {/* Features with Demos */}
+      <FeaturesStackedAlternatingWithDemos
+        id="more-features"
+        features={
+          <StackedFeature
+            headline="Usage Analytics"
+            subheadline={
+              <p>
+                Track views, downloads, and engagement across all your galleries. See which photos resonate most with
+                your clients and make data-driven decisions to grow your business.
+              </p>
+            }
+            cta={
+              <PlainButtonLink href="https://app.50sq.com/signup">
+                Learn more <ChevronIcon />
+              </PlainButtonLink>
+            }
+            demo={
+              <Screenshot wallpaper="yellow" placement="bottom-left" className="h-full">
+                <Image
+                  src="/img/screenshots/analytics-light.jpg"
+                  alt="Analytics dashboard"
+                  width={1920}
+                  height={1080}
+                  className="dark:hidden"
+                />
+                <Image
+                  src="/img/screenshots/analytics-dark.jpg"
+                  alt="Analytics dashboard"
+                  width={1920}
+                  height={1080}
+                  className="not-dark:hidden"
+                />
+              </Screenshot>
+            }
+          />
+        }
+      />
+
       {/* Testimonial */}
       <TestimonialLargeQuote
         id="testimonial"
@@ -183,11 +245,7 @@ export default function Page() {
       <PricingHeroMultiTier
         id="pricing"
         headline="Choose Your Plan"
-        subheadline={
-          <p>
-            Select the perfect plan for your needs
-          </p>
-        }
+        subheadline={<p>Select the perfect plan for your needs</p>}
         options={['Monthly', 'Yearly']}
         plans={{ Monthly: plans('Monthly'), Yearly: plans('Yearly') }}
       />
