@@ -2,6 +2,7 @@ import { PlainButtonLink } from '@/components/elements/button'
 import { Main } from '@/components/elements/main'
 import { ThemeToggle } from '@/components/elements/theme-toggle'
 import {
+  NavbarLink,
   NavbarLogo,
   NavbarWithLogoActionsAndCenteredLinks,
 } from '@/components/sections/navbar-with-logo-actions-and-centered-links'
@@ -45,7 +46,13 @@ export default function RootLayout({
         <ThemeProvider>
           <NavbarWithLogoActionsAndCenteredLinks
             id="navbar"
-            links={<></>}
+            links={
+              <>
+                <NavbarLink href="/#features">Features</NavbarLink>
+                <NavbarLink href="/pricing">Pricing</NavbarLink>
+                <NavbarLink href="/about">About</NavbarLink>
+              </>
+            }
             logo={
               <NavbarLogo href="/">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-10" viewBox="0 0 50 50">

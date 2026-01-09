@@ -181,38 +181,136 @@ export default function Page() {
       <FeaturesStackedAlternatingWithDemos
         id="more-features"
         features={
-          <StackedFeature
-            headline="Usage Analytics"
-            subheadline={
-              <p>
-                Track views, downloads, and engagement across all your galleries. See which photos resonate most with
-                your clients and make data-driven decisions to grow your business.
-              </p>
-            }
-            cta={
-              <PlainButtonLink href="https://app.50sq.com/signup">
-                Learn more <ChevronIcon />
-              </PlainButtonLink>
-            }
-            demo={
-              <Screenshot wallpaper="yellow" placement="bottom-left" className="h-full">
-                <Image
-                  src="/img/screenshots/analytics-light.jpg"
-                  alt="Analytics dashboard"
-                  width={1920}
-                  height={1080}
-                  className="dark:hidden"
-                />
-                <Image
-                  src="/img/screenshots/analytics-dark.jpg"
-                  alt="Analytics dashboard"
-                  width={1920}
-                  height={1080}
-                  className="not-dark:hidden"
-                />
-              </Screenshot>
-            }
-          />
+          <>
+            <StackedFeature
+              headline="Gallery Management"
+              subheadline={
+                <p>
+                  Organize, curate, and deliver your photography work with powerful gallery management. Create unlimited
+                  galleries, organize them into projects, and customize layouts to match your brand.
+                </p>
+              }
+              cta={
+                <PlainButtonLink href="/features/gallery-management">
+                  Learn more <ChevronIcon />
+                </PlainButtonLink>
+              }
+              demo={
+                <Screenshot wallpaper="yellow" placement="bottom-left" className="h-full">
+                  <Image
+                    src="/img/screenshots/analytics-light.jpg"
+                    alt="Gallery management"
+                    width={1920}
+                    height={1080}
+                    className="dark:hidden"
+                  />
+                  <Image
+                    src="/img/screenshots/analytics-dark.jpg"
+                    alt="Gallery management"
+                    width={1920}
+                    height={1080}
+                    className="not-dark:hidden"
+                  />
+                </Screenshot>
+              }
+            />
+            <StackedFeature
+              headline="Lightning-Fast Uploading"
+              subheadline={
+                <p>
+                  Upload gigabytes of photos in minutes with our optimized upload system. Parallel uploads, resume
+                  capability, and background processing keep you productive.
+                </p>
+              }
+              cta={
+                <PlainButtonLink href="/features/uploading">
+                  Learn more <ChevronIcon />
+                </PlainButtonLink>
+              }
+              demo={
+                <Screenshot wallpaper="yellow" placement="bottom-left" className="h-full">
+                  <Image
+                    src="/img/screenshots/analytics-light.jpg"
+                    alt="Fast uploading"
+                    width={1920}
+                    height={1080}
+                    className="dark:hidden"
+                  />
+                  <Image
+                    src="/img/screenshots/analytics-dark.jpg"
+                    alt="Fast uploading"
+                    width={1920}
+                    height={1080}
+                    className="not-dark:hidden"
+                  />
+                </Screenshot>
+              }
+            />
+            <StackedFeature
+              headline="Lightroom Classic Plugin"
+              subheadline={
+                <p>
+                  Seamlessly connect your Lightroom Classic workflow to 50sq. Export photos, create galleries, and
+                  organize your work without ever leaving Lightroom.
+                </p>
+              }
+              cta={
+                <PlainButtonLink href="/features/lightroom-plugin">
+                  Learn more <ChevronIcon />
+                </PlainButtonLink>
+              }
+              demo={
+                <Screenshot wallpaper="yellow" placement="bottom-left" className="h-full">
+                  <Image
+                    src="/img/screenshots/analytics-light.jpg"
+                    alt="Lightroom plugin"
+                    width={1920}
+                    height={1080}
+                    className="dark:hidden"
+                  />
+                  <Image
+                    src="/img/screenshots/analytics-dark.jpg"
+                    alt="Lightroom plugin"
+                    width={1920}
+                    height={1080}
+                    className="not-dark:hidden"
+                  />
+                </Screenshot>
+              }
+            />
+            <StackedFeature
+              headline="Usage Analytics"
+              subheadline={
+                <p>
+                  Track views, downloads, and engagement across all your galleries. See which photos resonate most with
+                  your clients and make data-driven decisions to grow your business.
+                </p>
+              }
+              cta={
+                <PlainButtonLink href="/features/analytics">
+                  Learn more <ChevronIcon />
+                </PlainButtonLink>
+              }
+              demo={
+                <Screenshot wallpaper="yellow" placement="bottom-left" className="h-full">
+                  <Image
+                    src="/img/screenshots/analytics-light.jpg"
+                    alt="Usage analytics"
+                    width={1920}
+                    height={1080}
+                    className="dark:hidden"
+                  />
+                  <Image
+                    src="/img/screenshots/analytics-dark.jpg"
+                    alt="Usage analytics"
+                    width={1920}
+                    height={1080}
+                    className="not-dark:hidden"
+                  />
+                </Screenshot>
+              }
+            />
+          </>
         }
       />
 

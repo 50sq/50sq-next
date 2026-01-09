@@ -1,5 +1,4 @@
 import { ButtonLink, PlainButtonLink, SoftButtonLink } from '@/components/elements/button'
-import { Logo, LogoGrid } from '@/components/elements/logo-grid'
 import { ChevronIcon } from '@/components/icons/chevron-icon'
 import { CallToActionSimpleCentered } from '@/components/sections/call-to-action-simple-centered'
 import { FAQsAccordion, Faq } from '@/components/sections/faqs-accordion'
@@ -89,106 +88,6 @@ export default function Page() {
         }
         options={['Monthly', 'Yearly']}
         plans={{ Monthly: plans('Monthly'), Yearly: plans('Yearly') }}
-        footer={
-          <LogoGrid>
-            <Logo>
-              <Image
-                src="/img/logos/9-color-black-height-32.svg"
-                className="dark:hidden"
-                alt=""
-                width={51}
-                height={32}
-              />
-              <Image
-                src="/img/logos/9-color-white-height-32.svg"
-                className="not-dark:hidden"
-                alt=""
-                width={51}
-                height={32}
-              />
-            </Logo>
-            <Logo>
-              <Image
-                src="/img/logos/10-color-black-height-32.svg"
-                className="dark:hidden"
-                alt=""
-                width={70}
-                height={32}
-              />
-              <Image
-                src="/img/logos/10-color-white-height-32.svg"
-                className="not-dark:hidden"
-                alt=""
-                width={70}
-                height={32}
-              />
-            </Logo>
-            <Logo>
-              <Image
-                src="/img/logos/11-color-black-height-32.svg"
-                className="dark:hidden"
-                alt=""
-                width={100}
-                height={32}
-              />
-              <Image
-                src="/img/logos/11-color-white-height-32.svg"
-                className="not-dark:hidden"
-                alt=""
-                width={100}
-                height={32}
-              />
-            </Logo>
-            <Logo>
-              <Image
-                src="/img/logos/12-color-black-height-32.svg"
-                className="dark:hidden"
-                alt=""
-                width={85}
-                height={32}
-              />
-              <Image
-                src="/img/logos/12-color-white-height-32.svg"
-                className="not-dark:hidden"
-                alt=""
-                width={85}
-                height={32}
-              />
-            </Logo>
-            <Logo>
-              <Image
-                src="/img/logos/13-color-black-height-32.svg"
-                className="dark:hidden"
-                alt=""
-                width={75}
-                height={32}
-              />
-              <Image
-                src="/img/logos/13-color-white-height-32.svg"
-                className="not-dark:hidden"
-                alt=""
-                width={75}
-                height={32}
-              />
-            </Logo>
-            <Logo>
-              <Image
-                src="/img/logos/8-color-black-height-32.svg"
-                className="dark:hidden"
-                alt=""
-                width={85}
-                height={32}
-              />
-              <Image
-                src="/img/logos/8-color-white-height-32.svg"
-                className="not-dark:hidden"
-                alt=""
-                width={85}
-                height={32}
-              />
-            </Logo>
-          </LogoGrid>
-        }
       />
       {/* Plan Comparison Table */}
       <PlanComparisonTable
