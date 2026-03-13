@@ -7,7 +7,21 @@
       "Bash(find:*)",
       "WebFetch(domain:ogkit.dev)",
       "WebSearch",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "mcp__paper__get_basic_info",
+      "mcp__paper__get_selection",
+      "Bash(npx next:*)",
+      "WebFetch(domain:localhost)",
+      "Bash(curl -s http://localhost:3000 2>/dev/null | head -200)",
+      "Bash(curl -s \"http://localhost:3000/_next/static/chunks/src_app_globals_91e4631d.css\" 2>/dev/null | grep -o \"\\\\-\\\\-color-gold[^:;,\\)]*\" | sort -u | head -20)",
+      "Bash(curl -s \"http://localhost:3000/_next/static/chunks/src_app_globals_91e4631d.css\" 2>/dev/null | grep -o \"\\\\-\\\\-font-display[^;]*\" | head -5)",
+      "Bash(curl -s http://localhost:3000 2>/dev/null | grep -o 'href=\"[^\"]*globals[^\"]*css[^\"]*\"')",
+      "Bash(curl -s \"http://localhost:3000/_next/static/chunks/src_app_globals_91e4631d.css\" 2>/dev/null | head -50)",
+      "Bash(curl -s \"http://localhost:3000/_next/static/chunks/src_app_globals_91e4631d.css\" 2>/dev/null | grep -i \"cormorant\\\\|gold\\\\|outfit\" | head -20)",
+      "Bash(ps -p 50216 -o command= 2>/dev/null)",
+      "Bash(sleep 3 && curl -s http://localhost:3000 2>/dev/null | grep -o 'href=\"[^\"]*globals[^\"]*css[^\"]*\"')",
+      "Bash(sleep 1 && curl -s \"http://localhost:3000/_next/static/chunks/src_app_globals_91e4631d.css\" 2>/dev/null | grep -i \"cormorant\\\\|gold\\\\|outfit\" | head -10)",
+      "Bash(npx tsc:*)"
     ]
   }
 }

@@ -3,8 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-display: 'Clarity City', system-ui, sans-serif;
-  --font-sans: 'Clarity City', system-ui, sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Outfit', 'Clarity City', system-ui, sans-serif;
+  --font-body: 'Outfit', 'Clarity City', system-ui, sans-serif;
 
   --color-yellow-50: oklch(98.5% 0.035 95);
   --color-yellow-100: oklch(96.5% 0.075 93);
@@ -19,6 +20,19 @@
   --color-yellow-950: oklch(28% 0.055 65);
 
   --color-yellow: var(--color-yellow-500);
+
+  --color-gold-50: oklch(97% 0.02 80);
+  --color-gold-100: oklch(93% 0.045 78);
+  --color-gold-200: oklch(87% 0.075 76);
+  --color-gold-300: oklch(82% 0.09 75);
+  --color-gold-400: oklch(77% 0.09 73);
+  --color-gold-500: oklch(70% 0.08 70);
+  --color-gold-600: oklch(61% 0.07 68);
+  --color-gold-700: oklch(51% 0.06 66);
+  --color-gold-800: oklch(41% 0.05 64);
+  --color-gold-900: oklch(31% 0.035 62);
+  --color-gold-950: oklch(23% 0.025 60);
+  --color-gold: var(--color-gold-400);
 }
 
 @utility bg-gradient-radial {
@@ -29,54 +43,13 @@
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--color-zinc-100);
+    background-color: #0A0A0A;
+    color: white;
     --scroll-padding-top: 0;
     scroll-padding-top: var(--scroll-padding-top);
-
-    @variant dark {
-      background-color: var(--color-zinc-950);
-    }
   }
 
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: -2;
-    background-image: url('/img/backgrounds/squares-light.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.35;
-    pointer-events: none;
-  }
-
-  .dark body::before {
-    background-image: url('/img/backgrounds/squares.svg');
-    opacity: 0.35;
-  }
-
-  body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background: radial-gradient(
-      ellipse at center,
-      rgba(244, 244, 245, 0.85) 0%,
-      rgba(244, 244, 245, 0.6) 70%,
-      rgba(244, 244, 245, 0.3) 100%
-    );
-    backdrop-filter: blur(1px);
-    pointer-events: none;
-  }
-
-  .dark body::after {
-    background: radial-gradient(
-      ellipse at center,
-      rgba(9, 9, 11, 0.9) 0%,
-      rgba(9, 9, 11, 0.7) 50%,
-      rgba(9, 9, 11, 0.4) 100%
-    );
+  body {
+    font-family: var(--font-sans);
   }
 }
