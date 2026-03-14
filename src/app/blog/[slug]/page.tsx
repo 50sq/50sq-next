@@ -10,8 +10,8 @@ const article = {
   subtitle:
     "Speed matters to your clients. Here's the exact workflow three top wedding photographers use to cull, edit, and deliver complete galleries in two days — without sacrificing quality.",
   author: {
-    name: 'Sarah Mitchell',
-    role: 'Wedding Photographer',
+    name: 'Yaz Jallad',
+    role: 'Photographer, creator of 50sq',
   },
 }
 
@@ -40,6 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: `${article.title} - 50sq Blog`,
     description: article.subtitle,
+    authors: [{ name: 'Yaz Jallad, Photographer, creator of 50sq' }],
   }
 }
 
@@ -47,7 +48,7 @@ export default function BlogArticlePage() {
   return (
     <>
       {/* Article Header */}
-      <section className="flex flex-col items-center pt-[100px] pb-12 gap-5 px-20">
+      <section className="flex flex-col items-center pt-16 sm:pt-20 lg:pt-[100px] pb-12 gap-5 px-5 sm:px-8 lg:px-20">
         <div className="flex items-center gap-3">
           <span className="text-[12px] uppercase tracking-[0.08em] leading-none text-[#C9A96E] font-medium">
             {article.category}
@@ -61,7 +62,7 @@ export default function BlogArticlePage() {
             {article.readTime}
           </span>
         </div>
-        <h1 className="font-display text-[56px] tracking-[-0.03em] leading-[1.15] text-center max-w-[800px] text-[#F2EDE6] font-light">
+        <h1 className="font-display text-[28px] sm:text-[40px] lg:text-[56px] tracking-[-0.03em] leading-[1.15] text-center max-w-[800px] text-[#F2EDE6] font-light">
           {article.title}
         </h1>
         <p className="text-[18px] leading-[1.6] text-center max-w-[600px] text-[#8A837A] font-light">
@@ -81,7 +82,7 @@ export default function BlogArticlePage() {
       </section>
 
       {/* Hero Image */}
-      <div className="mx-auto max-w-[1040px] px-20">
+      <div className="mx-auto max-w-[1040px] px-5 sm:px-8 lg:px-20">
         <div className="w-full h-[480px] rounded-2xl bg-[#1A1816] border border-[#1F1D1B]" />
       </div>
 
@@ -154,7 +155,7 @@ export default function BlogArticlePage() {
         </div>
 
         {/* Inline Image */}
-        <div className="w-full max-w-[1040px] py-8 px-20">
+        <div className="w-full max-w-[1040px] py-8 px-5 sm:px-8 lg:px-20">
           <div className="w-full h-[360px] rounded-xl bg-[#141414] border border-[#1F1D1B]" />
         </div>
 
@@ -176,12 +177,12 @@ export default function BlogArticlePage() {
       </article>
 
       {/* Divider */}
-      <div className="mx-auto max-w-[1040px] pt-12 px-20">
+      <div className="mx-auto max-w-[1040px] pt-12 px-5 sm:px-8 lg:px-20">
         <div className="w-full h-px bg-[#1F1D1B]" />
       </div>
 
       {/* Related Posts */}
-      <section className="mx-auto max-w-[1200px] pt-14 pb-20 px-20">
+      <section className="mx-auto max-w-[1200px] pt-14 pb-20 px-5 sm:px-8 lg:px-20">
         <div className="flex items-center mb-8">
           <span className="text-[13px] uppercase tracking-widest leading-none text-[#C9A96E] font-medium">
             Related Posts

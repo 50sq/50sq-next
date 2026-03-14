@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 /* ─── 50sq Logo SVG (reused in Workflow step 2 and Footer) ─── */
@@ -47,7 +48,7 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 1: Hero
       ═══════════════════════════════════════════ */}
-      <section className="relative flex w-full flex-col items-center gap-8 px-20 pt-[100px] pb-20">
+      <section className="relative flex w-full flex-col items-center gap-6 px-5 pt-16 pb-12 sm:gap-8 sm:px-8 sm:pt-20 lg:px-20 lg:pt-[100px] lg:pb-20">
         {/* Subtle radial glow behind hero */}
         <div className="pointer-events-none absolute top-0 left-1/2 h-[600px] w-[800px] -translate-x-1/2 rounded-full bg-[#C9A96E] opacity-[0.03] blur-[150px]" />
         <div className="flex items-center gap-2 rounded-[100px] border border-[#C9A96E66] px-4 py-2">
@@ -57,14 +58,14 @@ export default function Page() {
           </span>
         </div>
         <div className="flex max-w-[960px] flex-col items-center">
-          <h1 className="text-center font-display text-[92px] leading-24 font-light tracking-[-0.04em] text-[#F2EDE6]">
+          <h1 className="text-center font-display text-[36px] leading-[1.1] font-light tracking-[-0.04em] text-[#F2EDE6] sm:text-[56px] lg:text-[92px] lg:leading-24">
             Run your photo business
           </h1>
-          <h1 className="text-center font-display text-[92px] leading-24 font-light tracking-[-0.04em] text-[#F2EDE6]">
+          <h1 className="text-center font-display text-[36px] leading-[1.1] font-light tracking-[-0.04em] text-[#F2EDE6] sm:text-[56px] lg:text-[92px] lg:leading-24">
             from one place.
           </h1>
         </div>
-        <p className="max-w-140 text-center font-sans text-[20px] leading-8 font-light text-[#8A837A]">
+        <p className="max-w-140 text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[18px] lg:text-[20px] lg:leading-8">
           Lightning-fast uploads, smart organization, secure client galleries, and a built-in storefront — everything a
           working photographer needs.
         </p>
@@ -73,51 +74,51 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 2: Hero CTA
       ═══════════════════════════════════════════ */}
-      <section className="flex w-full items-center justify-center gap-4 px-20">
+      <section className="flex w-full flex-col items-center justify-center gap-3 px-5 sm:flex-row sm:gap-4 sm:px-8 lg:px-20">
         <Link
           href="https://app.50sq.com/signup"
-          className="flex items-center justify-center rounded-[100px] bg-[#C9A96E] px-10 py-4"
+          className="flex w-full items-center justify-center rounded-[100px] bg-[#C9A96E] px-8 py-3.5 sm:w-auto sm:px-10 sm:py-4"
         >
-          <span className="font-sans text-[16px] leading-5 font-medium tracking-[0.01em] text-[#0A0A0A]">
+          <span className="font-sans text-[15px] leading-5 font-medium tracking-[0.01em] text-[#0A0A0A] sm:text-[16px]">
             Start Free Trial
           </span>
         </Link>
         <Link
           href="#examples"
-          className="flex items-center justify-center rounded-[100px] border border-[#C9A96E4D] px-10 py-4"
+          className="flex w-full items-center justify-center rounded-[100px] border border-[#C9A96E4D] px-8 py-3.5 sm:w-auto sm:px-10 sm:py-4"
         >
-          <span className="font-sans text-[16px] leading-5 tracking-[0.01em] text-[#F2EDE6]">See Demo Gallery</span>
+          <span className="font-sans text-[15px] leading-5 tracking-[0.01em] text-[#F2EDE6] sm:text-[16px]">See Demo Gallery</span>
         </Link>
       </section>
 
       {/* ═══════════════════════════════════════════
           SECTION 3: Photo Grid
       ═══════════════════════════════════════════ */}
-      <section id="examples" className="flex w-full items-center justify-center gap-4 px-20 pt-20">
-        <div className="h-[280px] w-[280px] shrink-0 rounded-xl bg-[#1A1816]" />
-        <div className="h-[280px] w-[280px] shrink-0 rounded-xl bg-[#201D1A]" />
-        <div className="h-[280px] w-[280px] shrink-0 rounded-xl bg-[#C9A96E] opacity-[0.12]" />
-        <div className="h-[280px] w-[280px] shrink-0 rounded-xl bg-[#1A1816]" />
+      <section id="examples" className="grid w-full grid-cols-2 gap-3 px-5 pt-12 sm:px-8 sm:pt-20 md:grid-cols-4 md:gap-4 lg:px-20">
+        <div className="aspect-square rounded-xl bg-[#1A1816]" />
+        <div className="aspect-square rounded-xl bg-[#201D1A]" />
+        <div className="aspect-square rounded-xl bg-[#C9A96E] opacity-[0.12]" />
+        <div className="aspect-square rounded-xl bg-[#1A1816]" />
       </section>
 
       {/* ═══════════════════════════════════════════
           SECTION 4: Features
       ═══════════════════════════════════════════ */}
-      <section id="features" className="flex w-full flex-col items-center gap-16 px-20 pt-[120px]">
+      <section id="features" className="flex w-full flex-col items-center gap-10 px-5 pt-20 sm:px-8 lg:gap-16 lg:px-20 lg:pt-[120px]">
         <div className="flex max-w-[600px] flex-col items-center gap-4">
           <span className="font-sans text-[13px] leading-4 font-medium tracking-widest text-[#C9A96E] uppercase">
             WHY 50SQ
           </span>
-          <h2 className="text-center font-display text-[52px] leading-[58px] tracking-[-0.03em] text-[#F2EDE6]">
+          <h2 className="text-center font-display text-[32px] leading-[1.15] tracking-[-0.03em] text-[#F2EDE6] sm:text-[40px] lg:text-[52px] lg:leading-[58px]">
             Less admin. More shooting.
           </h2>
-          <p className="text-center font-sans text-[18px] leading-7 font-light text-[#8A837A]">
+          <p className="text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[18px]">
             Everything you need to deliver, sell, and showcase your work — without the tech headaches.
           </p>
         </div>
-        <div className="flex w-full justify-center gap-6 px-20">
+        <div className="flex w-full flex-col items-center gap-5 lg:flex-row lg:justify-center lg:gap-6 lg:px-20">
           {/* Card: Client Galleries */}
-          <div className="flex w-[380px] shrink-0 flex-col gap-6 rounded-2xl border border-[#1F1D1B] bg-[#141414] p-10 shadow-[0_4px_40px_rgba(0,0,0,0.4)]">
+          <div className="flex w-full flex-col gap-6 rounded-2xl border border-[#1F1D1B] bg-[#141414] p-6 shadow-[0_4px_40px_rgba(0,0,0,0.4)] sm:p-10 lg:w-[380px] lg:shrink-0">
             <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#C9A96E]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <rect x="3" y="3" width="18" height="18" rx="2" stroke="#0A0A0A" strokeWidth="1.5" />
@@ -136,7 +137,7 @@ export default function Page() {
             </div>
           </div>
           {/* Card: Print Storefront */}
-          <div className="flex w-[380px] shrink-0 flex-col gap-6 rounded-2xl border border-[#1F1D1B] bg-[#141414] p-10 shadow-[0_4px_40px_rgba(0,0,0,0.4)]">
+          <div className="flex w-full flex-col gap-6 rounded-2xl border border-[#1F1D1B] bg-[#141414] p-6 shadow-[0_4px_40px_rgba(0,0,0,0.4)] sm:p-10 lg:w-[380px] lg:shrink-0">
             <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#C9A96E]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <circle cx="12" cy="12" r="9" stroke="#0A0A0A" strokeWidth="1.5" />
@@ -154,7 +155,7 @@ export default function Page() {
             </div>
           </div>
           {/* Card: Portfolio Sites */}
-          <div className="flex w-[380px] shrink-0 flex-col gap-6 rounded-2xl border border-[#1F1D1B] bg-[#141414] p-10 shadow-[0_4px_40px_rgba(0,0,0,0.4)]">
+          <div className="flex w-full flex-col gap-6 rounded-2xl border border-[#1F1D1B] bg-[#141414] p-6 shadow-[0_4px_40px_rgba(0,0,0,0.4)] sm:p-10 lg:w-[380px] lg:shrink-0">
             <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#C9A96E]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
@@ -184,29 +185,29 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 5: Stats
       ═══════════════════════════════════════════ */}
-      <section className="relative flex w-full items-center justify-center gap-[120px] px-20 py-[120px]">
+      <section className="relative flex w-full flex-col items-center justify-center gap-10 px-5 py-16 sm:flex-row sm:gap-12 sm:px-8 lg:gap-[120px] lg:px-20 lg:py-[120px]">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-[#C9A96E]/[0.02] to-transparent" />
         <div className="flex flex-col items-center gap-2">
-          <span className="font-display text-[72px] leading-18 font-light tracking-[-0.04em] text-[#F2EDE6]">
+          <span className="font-display text-[40px] leading-[1.1] font-light tracking-[-0.04em] text-[#F2EDE6] sm:text-[48px] lg:text-[72px] lg:leading-18">
             560 GB
           </span>
-          <span className="font-sans text-[14px] leading-4.5 font-light tracking-[0.06em] text-[#8A837A] uppercase">
+          <span className="font-sans text-[13px] leading-4.5 font-light tracking-[0.06em] text-[#8A837A] uppercase sm:text-[14px]">
             Images Stored
           </span>
         </div>
-        <div className="h-20 w-px shrink-0 bg-[#2A2622]" />
+        <div className="hidden h-20 w-px shrink-0 bg-[#2A2622] sm:block" />
         <div className="flex flex-col items-center gap-2">
-          <span className="font-display text-[72px] leading-18 font-light tracking-[-0.04em] text-[#F2EDE6]">5m+</span>
-          <span className="font-sans text-[14px] leading-4.5 font-light tracking-[0.06em] text-[#8A837A] uppercase">
+          <span className="font-display text-[40px] leading-[1.1] font-light tracking-[-0.04em] text-[#F2EDE6] sm:text-[48px] lg:text-[72px] lg:leading-18">5m+</span>
+          <span className="font-sans text-[13px] leading-4.5 font-light tracking-[0.06em] text-[#8A837A] uppercase sm:text-[14px]">
             Photos Delivered
           </span>
         </div>
-        <div className="h-20 w-px shrink-0 bg-[#2A2622]" />
+        <div className="hidden h-20 w-px shrink-0 bg-[#2A2622] sm:block" />
         <div className="flex flex-col items-center gap-2">
-          <span className="font-display text-[72px] leading-18 font-light tracking-[-0.04em] text-[#F2EDE6]">
+          <span className="font-display text-[40px] leading-[1.1] font-light tracking-[-0.04em] text-[#F2EDE6] sm:text-[48px] lg:text-[72px] lg:leading-18">
             99.9%
           </span>
-          <span className="font-sans text-[14px] leading-4.5 font-light tracking-[0.06em] text-[#8A837A] uppercase">
+          <span className="font-sans text-[13px] leading-4.5 font-light tracking-[0.06em] text-[#8A837A] uppercase sm:text-[14px]">
             Uptime
           </span>
         </div>
@@ -215,17 +216,19 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 6: Testimonial
       ═══════════════════════════════════════════ */}
-      <section className="flex w-full flex-col items-center gap-8 px-20 pt-10 pb-30">
+      <section className="flex w-full flex-col items-center gap-6 px-5 pt-10 pb-16 sm:gap-8 sm:px-8 lg:px-20 lg:pb-30">
         <div className="h-px w-16 shrink-0 bg-[#2A2622]" />
-        <p className="max-w-180 text-center font-display text-[32px] leading-12 font-light tracking-[-0.01em] text-[#F2EDE6] italic">
+        <p className="max-w-180 text-center font-display text-[22px] leading-8 font-light tracking-[-0.01em] text-[#F2EDE6] italic sm:text-[26px] sm:leading-10 lg:text-[32px] lg:leading-12">
           "50sq allows us to not only publish all the photos from Laracon AU, but easily manage them en masse. Tagging
           and grouping is a breeze, and sharing photos privately with our speakers means we have one unified platform
           for all our photography distribution needs!"
         </p>
         <div className="flex flex-col items-center gap-3">
-          <img
+          <Image
             src="/img/avatars/michaeldyrynda.jpg"
-            alt="Sarah Mitchell"
+            alt="Michael Dyrynda"
+            width={48}
+            height={48}
             className="size-12 rounded-full object-cover"
           />
           <div className="flex flex-col items-center gap-1">
@@ -238,19 +241,19 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 7: App Showcase
       ═══════════════════════════════════════════ */}
-      <section className="flex w-full items-center justify-center gap-20 px-[120px]">
-        <div className="flex max-w-[440px] shrink-0 flex-col gap-8">
+      <section className="flex w-full flex-col items-center justify-center gap-10 px-5 sm:px-8 lg:flex-row lg:gap-20 lg:px-[120px]">
+        <div className="flex w-full flex-col gap-6 sm:gap-8 lg:max-w-[440px] lg:shrink-0">
           <span className="font-sans text-[13px] leading-4 font-medium tracking-widest text-[#C9A96E] uppercase">
             THE PLATFORM
           </span>
-          <h2 className="font-display text-[48px] leading-14 tracking-[-0.03em] text-[#F2EDE6]">
+          <h2 className="font-display text-[28px] leading-[1.15] tracking-[-0.03em] text-[#F2EDE6] sm:text-[36px] lg:text-[48px] lg:leading-14">
             3–5x faster uploads. Zero headaches.
           </h2>
-          <p className="font-sans text-[17px] leading-7 font-light text-[#8A837A]">
+          <p className="font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[17px]">
             Smart tagging, automatic watermarking, client CRM, and usage analytics — all in a clean interface that stays
             out of your way.
           </p>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <div className="flex items-center gap-2">
               <div className="size-2 shrink-0 rounded-full bg-[#C9A96E]" />
               <span className="font-sans text-[14px] leading-4.5 text-[#F2EDE6]">Custom domains</span>
@@ -266,7 +269,7 @@ export default function Page() {
           </div>
         </div>
         {/* Phone mockup */}
-        <div className="relative flex h-[640px] w-[320px] shrink-0 flex-col rounded-[40px] border border-[#1F1D1B] bg-[#141414] p-4 shadow-[0_8px_60px_rgba(0,0,0,0.5)]">
+        <div className="relative flex h-[480px] w-[240px] shrink-0 flex-col rounded-[40px] border border-[#1F1D1B] bg-[#141414] p-4 shadow-[0_8px_60px_rgba(0,0,0,0.5)] sm:h-[640px] sm:w-[320px]">
           <div className="flex justify-center pt-2 pb-4">
             <div className="h-1 w-20 shrink-0 rounded-[100px] bg-[#C9A96E26]" />
           </div>
@@ -290,22 +293,22 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 8: Workflow
       ═══════════════════════════════════════════ */}
-      <section className="flex w-full flex-col items-center gap-16 px-20 pt-[120px]">
+      <section className="flex w-full flex-col items-center gap-10 px-5 pt-20 sm:px-8 lg:gap-16 lg:px-20 lg:pt-[120px]">
         <div className="flex max-w-[640px] flex-col items-center gap-4">
           <span className="font-sans text-[13px] leading-4 font-medium tracking-widest text-[#C9A96E] uppercase">
             How It Works
           </span>
-          <h2 className="text-center font-display text-[52px] leading-[58px] tracking-[-0.03em] text-[#F2EDE6]">
+          <h2 className="text-center font-display text-[32px] leading-[1.15] tracking-[-0.03em] text-[#F2EDE6] sm:text-[40px] lg:text-[52px] lg:leading-[58px]">
             From Lightroom to client in seconds.
           </h2>
-          <p className="text-center font-sans text-[17px] leading-7 font-light text-[#8A837A]">
+          <p className="text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[17px]">
             Our Lightroom Classic plugin exports directly to 50sq. Your clients get a beautiful, branded gallery —
             instantly.
           </p>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-0">
           {/* Step 1 */}
-          <div className="flex w-[240px] shrink-0 flex-col items-center gap-6">
+          <div className="flex w-full max-w-[240px] flex-col items-center gap-6">
             <div className="flex size-20 shrink-0 items-center justify-center rounded-[20px] border border-[#2A2622] bg-[#141414]">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
                 <rect x="4" y="4" width="28" height="28" rx="4" stroke="#C9A96E" strokeWidth="1.5" />
@@ -327,7 +330,7 @@ export default function Page() {
             </div>
           </div>
           {/* Arrow 1 */}
-          <div className="mb-[60px] flex items-center px-4">
+          <div className="hidden items-center px-4 lg:mb-[60px] lg:flex">
             <div
               className="h-px w-12 shrink-0"
               style={{ backgroundImage: 'linear-gradient(90deg, #2A2622 0%, #C9A96E 100%)' }}
@@ -341,7 +344,7 @@ export default function Page() {
             />
           </div>
           {/* Step 2 */}
-          <div className="flex w-[240px] shrink-0 flex-col items-center gap-6">
+          <div className="flex w-full max-w-[240px] flex-col items-center gap-6">
             <div className="flex size-20 shrink-0 items-center justify-center rounded-[20px] bg-[#C9A96E] shadow-[0_0_40px_rgba(201,169,110,0.3)]">
               <Logo50sq width={44} height={44} fill="#0A0A0A" accentFill="#0A0A0A" />
             </div>
@@ -358,7 +361,7 @@ export default function Page() {
             </div>
           </div>
           {/* Arrow 2 */}
-          <div className="mb-[60px] flex items-center px-4">
+          <div className="hidden items-center px-4 lg:mb-[60px] lg:flex">
             <div
               className="h-px w-12 shrink-0"
               style={{ backgroundImage: 'linear-gradient(90deg, #2A2622 0%, #C9A96E 100%)' }}
@@ -372,7 +375,7 @@ export default function Page() {
             />
           </div>
           {/* Step 3 */}
-          <div className="flex w-[240px] shrink-0 flex-col items-center gap-6">
+          <div className="flex w-full max-w-[240px] flex-col items-center gap-6">
             <div className="flex size-20 shrink-0 items-center justify-center rounded-[20px] border border-[#2A2622] bg-[#141414]">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
                 <path
@@ -402,7 +405,7 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 9: Browser Mockup
       ═══════════════════════════════════════════ */}
-      <section className="flex w-full flex-col items-center px-[120px] pt-20">
+      <section className="flex w-full flex-col items-center px-5 pt-12 sm:px-8 lg:px-[120px] lg:pt-20">
         <div className="flex w-full flex-col overflow-clip rounded-xl border border-[#1F1D1B] shadow-[0_8px_60px_rgba(0,0,0,0.5)]">
           {/* Browser chrome */}
           <div className="flex items-center gap-3 bg-[#141414] px-5 py-3.5">
@@ -418,24 +421,24 @@ export default function Page() {
             </div>
           </div>
           {/* Gallery content */}
-          <div className="flex flex-col bg-[#0E0E0E] p-8">
-            <div className="flex items-center justify-between pb-6">
+          <div className="flex flex-col bg-[#0E0E0E] p-4 sm:p-8">
+            <div className="flex flex-col gap-3 pb-4 sm:flex-row sm:items-center sm:justify-between sm:pb-6">
               <div className="flex flex-col gap-1">
-                <h3 className="font-display text-[28px] leading-[34px] text-[#F2EDE6]">Johnson Wedding</h3>
-                <span className="font-sans text-[13px] leading-4 font-light text-[#6B6560]">
+                <h3 className="font-display text-[20px] leading-[1.2] text-[#F2EDE6] sm:text-[28px] sm:leading-[34px]">Johnson Wedding</h3>
+                <span className="font-sans text-[12px] leading-4 font-light text-[#6B6560] sm:text-[13px]">
                   248 photos · March 8, 2026 · Portland, OR
                 </span>
               </div>
-              <div className="flex gap-3">
-                <div className="rounded-md border border-[#2A2622] bg-[#141414] px-5 py-2">
-                  <span className="font-sans text-[14px] leading-5 text-[#F2EDE6]">Favorites (24)</span>
+              <div className="flex gap-2 sm:gap-3">
+                <div className="rounded-md border border-[#2A2622] bg-[#141414] px-3 py-1.5 sm:px-5 sm:py-2">
+                  <span className="font-sans text-[12px] leading-5 text-[#F2EDE6] sm:text-[14px]">Favorites (24)</span>
                 </div>
-                <div className="rounded-md bg-[#C9A96E] px-5 py-2">
-                  <span className="font-sans text-[14px] leading-5 font-medium text-[#0A0A0A]">Download All</span>
+                <div className="rounded-md bg-[#C9A96E] px-3 py-1.5 sm:px-5 sm:py-2">
+                  <span className="font-sans text-[12px] leading-5 font-medium text-[#0A0A0A] sm:text-[14px]">Download All</span>
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-6 gap-2">
+            <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
               <div className="aspect-square rounded-sm bg-[#1A1816]" />
               <div className="aspect-square rounded-sm bg-[#201D1A]" />
               <div className="aspect-square rounded-sm bg-[#1A1816]" />
@@ -450,16 +453,16 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 10: Detailed Features
       ═══════════════════════════════════════════ */}
-      <section className="flex w-full flex-col items-center gap-16 px-20 pt-[120px]">
+      <section className="flex w-full flex-col items-center gap-10 px-5 pt-20 sm:px-8 lg:gap-16 lg:px-20 lg:pt-[120px]">
         <div className="flex flex-col items-center gap-4">
           <span className="font-sans text-[13px] leading-4 font-medium tracking-widest text-[#C9A96E] uppercase">
             Everything You Need
           </span>
-          <h2 className="text-center font-display text-[48px] leading-[54px] tracking-[-0.02em] text-[#F2EDE6]">
+          <h2 className="text-center font-display text-[28px] leading-[1.15] tracking-[-0.02em] text-[#F2EDE6] sm:text-[36px] lg:text-[48px] lg:leading-[54px]">
             Tools that work as hard as you do.
           </h2>
         </div>
-        <div className="flex max-w-[1200px] flex-wrap justify-center gap-5">
+        <div className="grid w-full max-w-[1200px] grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
           {[
             {
               icon: (
@@ -546,7 +549,7 @@ export default function Page() {
           ].map((f) => (
             <div
               key={f.title}
-              className="flex w-[380px] shrink-0 flex-col gap-4 rounded-xl border border-[#1F1D1B] bg-[#0E0E0E] p-9 shadow-[0_2px_24px_rgba(0,0,0,0.3)] transition-colors hover:border-[#2A2622]"
+              className="flex w-full flex-col gap-4 rounded-xl border border-[#1F1D1B] bg-[#0E0E0E] p-6 shadow-[0_2px_24px_rgba(0,0,0,0.3)] transition-colors hover:border-[#2A2622] sm:p-9"
             >
               <div className="flex items-center gap-3">
                 <div className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-[#C9A96E1A]">
@@ -563,18 +566,18 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 11: Pricing
       ═══════════════════════════════════════════ */}
-      <section id="pricing" className="flex w-full flex-col items-center gap-16 px-20 pt-[120px]">
+      <section id="pricing" className="flex w-full flex-col items-center gap-10 px-5 pt-20 sm:px-8 lg:gap-16 lg:px-20 lg:pt-[120px]">
         <div className="flex flex-col items-center gap-4">
           <span className="font-sans text-[13px] leading-4 font-medium tracking-widest text-[#C9A96E] uppercase">
             Simple Pricing
           </span>
-          <h2 className="text-center font-display text-[48px] leading-[54px] tracking-[-0.02em] text-[#F2EDE6]">
+          <h2 className="text-center font-display text-[28px] leading-[1.15] tracking-[-0.02em] text-[#F2EDE6] sm:text-[36px] lg:text-[48px] lg:leading-[54px]">
             0% commission. Always.
           </h2>
         </div>
-        <div className="flex justify-center gap-5">
+        <div className="flex w-full flex-col items-center gap-5 lg:flex-row lg:justify-center">
           {/* Starter */}
-          <div className="flex w-[360px] shrink-0 flex-col gap-8 rounded-2xl border border-[#1F1D1B] bg-[#0E0E0E] p-10 shadow-[0_4px_40px_rgba(0,0,0,0.3)]">
+          <div className="flex w-full max-w-[400px] flex-col gap-8 rounded-2xl border border-[#1F1D1B] bg-[#0E0E0E] p-6 shadow-[0_4px_40px_rgba(0,0,0,0.3)] sm:p-10 lg:w-[360px]">
             <div className="flex flex-col gap-2">
               <span className="font-sans text-[14px] leading-4.5 font-medium tracking-[0.06em] text-[#8A837A] uppercase">
                 Starter
@@ -602,7 +605,7 @@ export default function Page() {
             </Link>
           </div>
           {/* Plus (highlighted) */}
-          <div className="relative flex w-[360px] shrink-0 flex-col gap-8 rounded-2xl border border-[#C9A96E] bg-[#141414] p-10 shadow-[0_4px_40px_rgba(201,169,110,0.1)]">
+          <div className="relative flex w-full max-w-[400px] flex-col gap-8 rounded-2xl border border-[#C9A96E] bg-[#141414] p-6 shadow-[0_4px_40px_rgba(201,169,110,0.1)] sm:p-10 lg:w-[360px]">
             <div className="absolute -top-3 left-1/2 flex -translate-x-1/2 items-center rounded-[100px] bg-[#C9A96E] px-4 py-1.5">
               <span className="font-sans text-[11px] leading-none font-semibold text-[#0A0A0A] uppercase">
                 Most Popular
@@ -641,7 +644,7 @@ export default function Page() {
             </Link>
           </div>
           {/* Pro */}
-          <div className="flex w-[360px] shrink-0 flex-col gap-8 rounded-2xl border border-[#1F1D1B] bg-[#0E0E0E] p-10 shadow-[0_4px_40px_rgba(0,0,0,0.3)]">
+          <div className="flex w-full max-w-[400px] flex-col gap-8 rounded-2xl border border-[#1F1D1B] bg-[#0E0E0E] p-6 shadow-[0_4px_40px_rgba(0,0,0,0.3)] sm:p-10 lg:w-[360px]">
             <div className="flex flex-col gap-2">
               <span className="font-sans text-[14px] leading-4.5 font-medium tracking-[0.06em] text-[#8A837A] uppercase">
                 Pro
@@ -674,22 +677,22 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 12: Sharing — Private Link Sharing
       ═══════════════════════════════════════════ */}
-      <section className="flex w-full flex-col items-center gap-16 px-20 pt-[120px]">
+      <section className="flex w-full flex-col items-center gap-10 px-5 pt-20 sm:px-8 lg:gap-16 lg:px-20 lg:pt-[120px]">
         <div className="flex max-w-[640px] flex-col items-center gap-4">
           <span className="font-sans text-[13px] leading-4 font-medium tracking-widest text-[#C9A96E] uppercase">
             Share &amp; Protect
           </span>
-          <h2 className="text-center font-display text-[52px] leading-[58px] tracking-[-0.03em] text-[#F2EDE6]">
+          <h2 className="text-center font-display text-[32px] leading-[1.15] tracking-[-0.03em] text-[#F2EDE6] sm:text-[40px] lg:text-[52px] lg:leading-[58px]">
             Your work. Your rules.
           </h2>
-          <p className="text-center font-sans text-[17px] leading-7 font-light text-[#8A837A]">
+          <p className="text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[17px]">
             Private sharing, granular permissions, and secure file delivery — all built in. No third-party tools needed.
           </p>
         </div>
 
         {/* Sub-feature 1: Private Link Sharing */}
-        <div className="mx-auto flex w-full max-w-[1200px] items-center gap-20">
-          <div className="flex max-w-[480px] shrink-0 flex-col gap-6">
+        <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-10 lg:flex-row lg:items-center lg:gap-20">
+          <div className="flex w-full flex-col gap-6 lg:max-w-[480px] lg:shrink-0">
             <div className="flex items-center gap-3">
               <div className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-[#C9A96E1A]">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -705,7 +708,7 @@ export default function Page() {
                 Private Link Sharing
               </span>
             </div>
-            <h3 className="font-display text-[36px] leading-11 tracking-[-0.02em] text-[#F2EDE6]">
+            <h3 className="font-display text-[26px] leading-[1.2] tracking-[-0.02em] text-[#F2EDE6] sm:text-[30px] lg:text-[36px] lg:leading-11">
               Share galleries like you share files — with a private link.
             </h3>
             <p className="font-sans text-[16px] leading-[26px] font-light text-[#8A837A]">
@@ -731,14 +734,14 @@ export default function Page() {
                   </span>
                 </div>
               </div>
-              <div className="flex gap-1.5">
-                <div className="size-[72px] shrink-0 rounded-sm bg-[#1A1816]" />
-                <div className="size-[72px] shrink-0 rounded-sm bg-[#201D1A]" />
-                <div className="size-[72px] shrink-0 rounded-sm bg-[#1A1816]" />
-                <div className="size-[72px] shrink-0 rounded-sm bg-[#252220]" />
-                <div className="size-[72px] shrink-0 rounded-sm bg-[#201D1A]" />
+              <div className="grid grid-cols-3 gap-1.5 sm:grid-cols-5">
+                <div className="aspect-square rounded-sm bg-[#1A1816]" />
+                <div className="aspect-square rounded-sm bg-[#201D1A]" />
+                <div className="aspect-square rounded-sm bg-[#1A1816]" />
+                <div className="aspect-square rounded-sm bg-[#252220] max-sm:hidden" />
+                <div className="aspect-square rounded-sm bg-[#201D1A] max-sm:hidden" />
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
                 <span className="font-sans text-[12px] leading-4 font-light text-[#6B6560]">86 photos</span>
                 <div className="size-[3px] shrink-0 rounded-full bg-[#3A3632]" />
                 <span className="font-sans text-[12px] leading-4 font-light text-[#6B6560]">Expires Mar 26</span>
@@ -750,7 +753,7 @@ export default function Page() {
         </div>
 
         {/* Sub-feature 2: Client Permissions */}
-        <div className="mx-auto flex w-full max-w-[1200px] items-center gap-20 pt-16">
+        <div className="mx-auto flex w-full max-w-[1200px] flex-col-reverse gap-10 pt-8 lg:flex-row lg:items-center lg:gap-20 lg:pt-16">
           <div className="flex grow flex-col overflow-clip rounded-2xl border border-[#1F1D1B] shadow-[0_4px_40px_rgba(0,0,0,0.4)]">
             <div className="flex items-center border-b border-[#1F1D1B] bg-[#141414] px-6 py-4">
               <span className="font-sans text-[14px] leading-4.5 font-medium text-[#F2EDE6]">
@@ -785,7 +788,7 @@ export default function Page() {
               ))}
             </div>
           </div>
-          <div className="flex max-w-[480px] shrink-0 flex-col gap-6">
+          <div className="flex w-full flex-col gap-6 lg:max-w-[480px] lg:shrink-0">
             <div className="flex items-center gap-3">
               <div className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-[#C9A96E1A]">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -798,7 +801,7 @@ export default function Page() {
                 Client Permissions
               </span>
             </div>
-            <h3 className="font-display text-[36px] leading-11 tracking-[-0.02em] text-[#F2EDE6]">
+            <h3 className="font-display text-[26px] leading-[1.2] tracking-[-0.02em] text-[#F2EDE6] sm:text-[30px] lg:text-[36px] lg:leading-11">
               Every gallery, tailored to every client.
             </h3>
             <p className="font-sans text-[16px] leading-[26px] font-light text-[#8A837A]">
@@ -809,8 +812,8 @@ export default function Page() {
         </div>
 
         {/* Sub-feature 3: Archive Storage */}
-        <div className="mx-auto flex w-full max-w-[1200px] items-center gap-20 pt-16">
-          <div className="flex max-w-[480px] shrink-0 flex-col gap-6">
+        <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-10 pt-8 lg:flex-row lg:items-center lg:gap-20 lg:pt-16">
+          <div className="flex w-full flex-col gap-6 lg:max-w-[480px] lg:shrink-0">
             <div className="flex items-center gap-3">
               <div className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-[#C9A96E1A]">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -829,7 +832,7 @@ export default function Page() {
                 Archive Storage
               </span>
             </div>
-            <h3 className="font-display text-[36px] leading-11 tracking-[-0.02em] text-[#F2EDE6]">
+            <h3 className="font-display text-[26px] leading-[1.2] tracking-[-0.02em] text-[#F2EDE6] sm:text-[30px] lg:text-[36px] lg:leading-11">
               Large file delivery, without the large price tag.
             </h3>
             <p className="font-sans text-[16px] leading-[26px] font-light text-[#8A837A]">
@@ -921,15 +924,15 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 13: Analytics
       ═══════════════════════════════════════════ */}
-      <section className="flex w-full flex-col items-center gap-16 px-20 pt-[120px]">
+      <section className="flex w-full flex-col items-center gap-10 px-5 pt-20 sm:px-8 lg:gap-16 lg:px-20 lg:pt-[120px]">
         <div className="flex max-w-[640px] flex-col items-center gap-4">
           <span className="font-sans text-[13px] leading-4 font-medium tracking-widest text-[#C9A96E] uppercase">
             Analytics
           </span>
-          <h2 className="text-center font-display text-[52px] leading-[58px] tracking-[-0.03em] text-[#F2EDE6]">
+          <h2 className="text-center font-display text-[32px] leading-[1.15] tracking-[-0.03em] text-[#F2EDE6] sm:text-[40px] lg:text-[52px] lg:leading-[58px]">
             Know what&rsquo;s working.
           </h2>
-          <p className="text-center font-sans text-[17px] leading-7 font-light text-[#8A837A]">
+          <p className="text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[17px]">
             Track gallery views, client engagement, and revenue — all from one dashboard.
           </p>
         </div>
@@ -947,22 +950,22 @@ export default function Page() {
             </div>
           </div>
           {/* Stats row */}
-          <div className="flex">
-            <div className="flex grow flex-col items-center gap-1 border-r border-[#1F1D1B] py-7">
-              <span className="font-display text-[36px] leading-9 text-[#F2EDE6]">1,247</span>
-              <span className="font-sans text-[12px] leading-4 font-light text-[#6B6560]">Gallery Views</span>
+          <div className="grid grid-cols-2 sm:grid-cols-4">
+            <div className="flex flex-col items-center gap-1 border-b border-r border-[#1F1D1B] py-5 sm:border-b-0 sm:py-7">
+              <span className="font-display text-[24px] leading-7 text-[#F2EDE6] sm:text-[36px] sm:leading-9">1,247</span>
+              <span className="font-sans text-[11px] leading-4 font-light text-[#6B6560] sm:text-[12px]">Gallery Views</span>
             </div>
-            <div className="flex grow flex-col items-center gap-1 border-r border-[#1F1D1B] py-7">
-              <span className="font-display text-[36px] leading-9 text-[#C9A96E]">$3,840</span>
-              <span className="font-sans text-[12px] leading-4 font-light text-[#6B6560]">Revenue</span>
+            <div className="flex flex-col items-center gap-1 border-b border-[#1F1D1B] py-5 sm:border-b-0 sm:border-r sm:py-7">
+              <span className="font-display text-[24px] leading-7 text-[#C9A96E] sm:text-[36px] sm:leading-9">$3,840</span>
+              <span className="font-sans text-[11px] leading-4 font-light text-[#6B6560] sm:text-[12px]">Revenue</span>
             </div>
-            <div className="flex grow flex-col items-center gap-1 border-r border-[#1F1D1B] py-7">
-              <span className="font-display text-[36px] leading-9 text-[#F2EDE6]">342</span>
-              <span className="font-sans text-[12px] leading-4 font-light text-[#6B6560]">Downloads</span>
+            <div className="flex flex-col items-center gap-1 border-r border-[#1F1D1B] py-5 sm:py-7">
+              <span className="font-display text-[24px] leading-7 text-[#F2EDE6] sm:text-[36px] sm:leading-9">342</span>
+              <span className="font-sans text-[11px] leading-4 font-light text-[#6B6560] sm:text-[12px]">Downloads</span>
             </div>
-            <div className="flex grow flex-col items-center gap-1 py-7">
-              <span className="font-display text-[36px] leading-9 text-[#F2EDE6]">89%</span>
-              <span className="font-sans text-[12px] leading-4 font-light text-[#6B6560]">Client Engagement</span>
+            <div className="flex flex-col items-center gap-1 py-5 sm:py-7">
+              <span className="font-display text-[24px] leading-7 text-[#F2EDE6] sm:text-[36px] sm:leading-9">89%</span>
+              <span className="font-sans text-[11px] leading-4 font-light text-[#6B6560] sm:text-[12px]">Client Engagement</span>
             </div>
           </div>
           {/* Gallery rows */}
@@ -976,11 +979,11 @@ export default function Page() {
                 key={row.name}
                 className={`flex items-center justify-between px-6 py-3.5 ${i < arr.length - 1 ? 'border-b border-[#1F1D1B]' : ''}`}
               >
-                <span className="font-sans text-[13px] leading-4 text-[#F2EDE6]">{row.name}</span>
-                <div className="flex items-center gap-8">
-                  <span className="font-sans text-[13px] leading-4 font-light text-[#8A837A]">{row.views}</span>
-                  <span className="font-sans text-[13px] leading-4 font-light text-[#8A837A]">{row.downloads}</span>
-                  <span className="font-sans text-[13px] leading-4 text-[#C9A96E]">{row.revenue}</span>
+                <span className="font-sans text-[12px] leading-4 text-[#F2EDE6] sm:text-[13px]">{row.name}</span>
+                <div className="flex items-center gap-3 sm:gap-8">
+                  <span className="hidden font-sans text-[13px] leading-4 font-light text-[#8A837A] sm:block">{row.views}</span>
+                  <span className="hidden font-sans text-[13px] leading-4 font-light text-[#8A837A] sm:block">{row.downloads}</span>
+                  <span className="font-sans text-[12px] leading-4 text-[#C9A96E] sm:text-[13px]">{row.revenue}</span>
                 </div>
               </div>
             ))}
@@ -991,8 +994,8 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 14: Team
       ═══════════════════════════════════════════ */}
-      <section className="mx-auto flex w-full max-w-[1200px] items-center gap-20 px-20 pt-[120px]">
-        <div className="flex max-w-[480px] shrink-0 flex-col gap-6">
+      <section className="mx-auto flex w-full max-w-[1200px] flex-col gap-10 px-5 pt-20 sm:px-8 lg:flex-row lg:items-center lg:gap-20 lg:px-20 lg:pt-[120px]">
+        <div className="flex w-full flex-col gap-6 lg:max-w-[480px] lg:shrink-0">
           <div className="flex items-center gap-3">
             <div className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-[#C9A96E1A]">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -1011,7 +1014,7 @@ export default function Page() {
               Team Management
             </span>
           </div>
-          <h2 className="font-display text-[36px] leading-11 tracking-[-0.02em] text-[#F2EDE6]">
+          <h2 className="font-display text-[26px] leading-[1.2] tracking-[-0.02em] text-[#F2EDE6] sm:text-[30px] lg:text-[36px] lg:leading-11">
             Run your studio, not just your camera.
           </h2>
           <p className="font-sans text-[16px] leading-[26px] font-light text-[#8A837A]">
@@ -1098,19 +1101,19 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 15: Roadmap
       ═══════════════════════════════════════════ */}
-      <section className="flex w-full flex-col items-center gap-16 px-20 pt-[120px]">
+      <section className="flex w-full flex-col items-center gap-10 px-5 pt-20 sm:px-8 lg:gap-16 lg:px-20 lg:pt-[120px]">
         <div className="flex max-w-[640px] flex-col items-center gap-4">
           <span className="font-sans text-[13px] leading-4 font-medium tracking-widest text-[#C9A96E] uppercase">
             Roadmap
           </span>
-          <h2 className="text-center font-display text-[52px] leading-[58px] tracking-[-0.03em] text-[#F2EDE6]">
+          <h2 className="text-center font-display text-[32px] leading-[1.15] tracking-[-0.03em] text-[#F2EDE6] sm:text-[40px] lg:text-[52px] lg:leading-[58px]">
             We&rsquo;re just getting started.
           </h2>
-          <p className="text-center font-sans text-[17px] leading-7 font-light text-[#8A837A]">
+          <p className="text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[17px]">
             Here&rsquo;s what&rsquo;s coming next. Built by photographers, for photographers.
           </p>
         </div>
-        <div className="flex w-full max-w-[1000px] flex-col px-20">
+        <div className="flex w-full max-w-[1000px] flex-col px-0 sm:px-8 lg:px-20">
           {[
             {
               status: 'In Progress',
@@ -1192,8 +1195,8 @@ export default function Page() {
               last: true,
             },
           ].map((item) => (
-            <div key={item.title} className={`flex gap-8 py-8 ${!item.last ? 'border-b border-[#1F1D1B]' : ''}`}>
-              <div className="flex w-[100px] shrink-0 flex-col items-center gap-2 pt-1.5">
+            <div key={item.title} className={`flex flex-col gap-4 py-6 sm:flex-row sm:gap-8 sm:py-8 ${!item.last ? 'border-b border-[#1F1D1B]' : ''}`}>
+              <div className="flex w-auto flex-row items-start gap-2 pt-0 sm:w-[100px] sm:shrink-0 sm:flex-col sm:items-center sm:pt-1.5">
                 <div
                   className={`flex items-center rounded-[100px] border px-3.5 py-1.5 ${item.statusBg} ${item.statusBorder}`}
                 >
@@ -1217,12 +1220,12 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 16: Changelog
       ═══════════════════════════════════════════ */}
-      <section className="flex w-full flex-col items-center gap-12 px-20 pt-[120px]">
+      <section className="flex w-full flex-col items-center gap-8 px-5 pt-20 sm:gap-12 sm:px-8 lg:px-20 lg:pt-[120px]">
         <div className="flex flex-col items-center gap-4">
           <span className="font-sans text-[13px] leading-4 font-medium tracking-widest text-[#C9A96E] uppercase">
             Changelog
           </span>
-          <h2 className="text-center font-display text-[44px] leading-[50px] tracking-[-0.02em] text-[#F2EDE6]">
+          <h2 className="text-center font-display text-[28px] leading-[1.15] tracking-[-0.02em] text-[#F2EDE6] sm:text-[36px] lg:text-[44px] lg:leading-[50px]">
             What&rsquo;s new in 50sq
           </h2>
         </div>
@@ -1256,8 +1259,8 @@ export default function Page() {
               desc: 'Set auto-expiry dates on galleries and download links. Clients get reminders before access expires.',
             },
           ].map((entry, i) => (
-            <div key={entry.version} className="flex items-start gap-5 border-b border-[#1F1D1B] p-6">
-              <div className="flex w-[90px] shrink-0 flex-col items-start gap-0.5 pt-0.5">
+            <div key={entry.version} className="flex flex-col gap-2 border-b border-[#1F1D1B] p-4 sm:flex-row sm:items-start sm:gap-5 sm:p-6">
+              <div className="flex w-auto flex-row items-center gap-2 sm:w-[90px] sm:shrink-0 sm:flex-col sm:items-start sm:gap-0.5 sm:pt-0.5">
                 <span className="font-sans text-[13px] leading-4 font-medium text-[#F2EDE6]">{entry.date}</span>
                 <span className="font-sans text-[11px] leading-3.5 font-light text-[#6B6560]">{entry.version}</span>
               </div>
@@ -1297,27 +1300,27 @@ export default function Page() {
       {/* ═══════════════════════════════════════════
           SECTION 17: CTA
       ═══════════════════════════════════════════ */}
-      <section className="relative mt-[120px] w-full overflow-hidden bg-[#141414]">
+      <section className="relative mt-16 w-full overflow-hidden bg-[#141414] lg:mt-[120px]">
         <div className="pointer-events-none absolute top-0 left-1/2 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-[#C9A96E] opacity-[0.04] blur-[120px]" />
-        <div className="relative mx-auto flex max-w-[1200px] flex-col items-center gap-10 px-20 py-[120px]">
-          <h2 className="max-w-[700px] text-center font-display text-[60px] leading-[68px] font-light tracking-[-0.03em] text-[#F2EDE6]">
+        <div className="relative mx-auto flex max-w-[1200px] flex-col items-center gap-8 px-5 py-16 sm:px-8 lg:gap-10 lg:px-20 lg:py-[120px]">
+          <h2 className="max-w-[700px] text-center font-display text-[32px] leading-[1.15] font-light tracking-[-0.03em] text-[#F2EDE6] sm:text-[40px] lg:text-[60px] lg:leading-[68px]">
             Start growing your photography business today.
           </h2>
-          <p className="max-w-[480px] text-center font-sans text-[18px] leading-7 font-light text-[#8A837A]">
+          <p className="max-w-[480px] text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[18px]">
             14-day free trial. No credit card required. Cancel anytime.
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex w-full flex-col items-center gap-3 sm:w-auto sm:flex-row sm:gap-4">
             <Link
               href="https://app.50sq.com/signup"
-              className="flex items-center justify-center rounded-[100px] bg-[#C9A96E] px-11 py-4 shadow-[0_0_30px_rgba(201,169,110,0.25)] transition hover:shadow-[0_0_40px_rgba(201,169,110,0.35)]"
+              className="flex w-full items-center justify-center rounded-[100px] bg-[#C9A96E] px-8 py-3.5 shadow-[0_0_30px_rgba(201,169,110,0.25)] transition hover:shadow-[0_0_40px_rgba(201,169,110,0.35)] sm:w-auto sm:px-11 sm:py-4"
             >
-              <span className="font-sans text-[16px] leading-5 font-medium text-[#0A0A0A]">Start Free Trial</span>
+              <span className="font-sans text-[15px] leading-5 font-medium text-[#0A0A0A] sm:text-[16px]">Start Free Trial</span>
             </Link>
             <Link
               href="#"
-              className="flex items-center justify-center rounded-[100px] border border-[#C9A96E4D] px-11 py-4"
+              className="flex w-full items-center justify-center rounded-[100px] border border-[#C9A96E4D] px-8 py-3.5 sm:w-auto sm:px-11 sm:py-4"
             >
-              <span className="font-sans text-[16px] leading-5 text-[#F2EDE6]">Book a Demo</span>
+              <span className="font-sans text-[15px] leading-5 text-[#F2EDE6] sm:text-[16px]">Book a Demo</span>
             </Link>
           </div>
         </div>
@@ -1327,9 +1330,9 @@ export default function Page() {
           SECTION 18: Footer
       ═══════════════════════════════════════════ */}
       <footer className="w-full border-t border-[#1F1D1B] bg-[#141414]">
-        <div className="mx-auto flex max-w-[1200px] items-center justify-between px-20 py-10">
+        <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-6 px-5 py-8 sm:flex-row sm:justify-between sm:px-8 sm:py-10 lg:px-20">
           <Logo50sq width={36} height={36} />
-          <div className="flex items-center gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8">
             {['Privacy', 'Terms', 'Contact', 'Twitter'].map((link) => (
               <Link
                 key={link}

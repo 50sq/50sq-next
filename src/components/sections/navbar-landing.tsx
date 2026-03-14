@@ -32,9 +32,9 @@ export function NavbarLanding({
 } & ComponentProps<'header'>) {
   return (
     <header className={clsx('sticky top-0 z-50 bg-[#0A0A0A]/80 backdrop-blur-md', className)} {...props}>
-      <nav className="flex items-center justify-between px-20 py-7">
+      <nav className="flex items-center justify-between px-4 py-4 sm:px-8 lg:px-20 lg:py-7">
         <div className="flex items-center">{logo}</div>
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-4 sm:gap-10">
           <div className="hidden items-center gap-10 md:flex">{links}</div>
           {cta}
         </div>

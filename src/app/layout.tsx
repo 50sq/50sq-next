@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   title: '50sq - Professional Photo Management for Photographers',
   description:
     'Lightning-fast uploads, smart organization, and secure client galleries. The photo platform you deserve.',
+  authors: [{ name: 'Yaz Jallad, Photographer, creator of 50sq' }],
+  creator: 'Yaz Jallad',
   metadataBase: new URL('https://50squared.com'),
   openGraph: {
     title: '50sq - Professional Photo Management for Photographers',
@@ -69,7 +71,7 @@ export default function RootLayout({
             cta={
               <Link
                 href="https://app.50sq.com/signup"
-                className="rounded-[100px] bg-[#C9A96E] px-7 py-2.5 text-[14px] font-medium leading-[18px] tracking-[0.02em] text-[#0A0A0A] transition hover:bg-[#d4b87e]"
+                className="rounded-[100px] bg-[#C9A96E] px-4 py-2 text-[13px] font-medium leading-[18px] tracking-[0.02em] text-[#0A0A0A] transition hover:bg-[#d4b87e] sm:px-7 sm:py-2.5 sm:text-[14px]"
               >
                 Start Free Trial
               </Link>

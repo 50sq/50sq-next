@@ -21,7 +21,8 @@
       "Bash(ps -p 50216 -o command= 2>/dev/null)",
       "Bash(sleep 3 && curl -s http://localhost:3000 2>/dev/null | grep -o 'href=\"[^\"]*globals[^\"]*css[^\"]*\"')",
       "Bash(sleep 1 && curl -s \"http://localhost:3000/_next/static/chunks/src_app_globals_91e4631d.css\" 2>/dev/null | grep -i \"cormorant\\\\|gold\\\\|outfit\" | head -10)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(ls -1 /Users/yazjallad/Code/50sq-next/*.config.* /Users/yazjallad/Code/50sq-next/*.config.* 2>/dev/null | head -20)"
     ]
   }
 }

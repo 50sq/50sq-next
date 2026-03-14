@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Blog - 50sq',
   description:
     'Stories, tips & updates for photographers. Practical advice on running your photo business, product updates, and inspiration from the 50sq community.',
+  authors: [{ name: 'Yaz Jallad, Photographer, creator of 50sq' }],
 }
 
 const featuredPost = {
@@ -14,7 +15,7 @@ const featuredPost = {
   title: 'How to deliver a wedding gallery in under 48 hours',
   excerpt:
     "Speed matters to your clients. Here's the exact workflow three top wedding photographers use to cull, edit, and deliver complete galleries in two days — without sacrificing quality.",
-  author: 'Sarah Mitchell',
+  author: 'Yaz Jallad, Photographer, creator of 50sq',
   readTime: '8 min read',
 }
 
@@ -94,11 +95,11 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="flex flex-col items-center pt-[100px] pb-20 gap-4 px-20">
+      <section className="flex flex-col items-center pt-16 sm:pt-20 lg:pt-[100px] pb-20 gap-4 px-5 sm:px-8 lg:px-20">
         <span className="text-[13px] uppercase tracking-widest leading-none text-[#C9A96E] font-medium">
           Blog
         </span>
-        <h1 className="font-display text-[56px] tracking-[-0.03em] leading-[1.15] text-center max-w-[700px] text-[#F2EDE6] font-light">
+        <h1 className="font-display text-[32px] sm:text-[40px] lg:text-[56px] tracking-[-0.03em] leading-[1.15] text-center max-w-[700px] text-[#F2EDE6] font-light">
           Stories, tips & updates for photographers
         </h1>
         <p className="text-[18px] leading-[1.6] text-center max-w-[520px] text-[#8A837A] font-light">
@@ -108,9 +109,9 @@ export default function BlogPage() {
       </section>
 
       {/* Featured Post */}
-      <section className="mx-auto max-w-[1200px] px-20">
-        <Link href={`/blog/${featuredPost.slug}`} className="group flex gap-10">
-          <div className="flex w-[560px] h-[380px] shrink-0 rounded-2xl overflow-clip bg-[#1A1816] transition group-hover:bg-[#201D1A]" />
+      <section className="mx-auto max-w-[1200px] px-5 sm:px-8 lg:px-20">
+        <Link href={`/blog/${featuredPost.slug}`} className="group flex flex-col gap-6 lg:flex-row lg:gap-10">
+          <div className="flex h-[220px] w-full rounded-2xl overflow-clip bg-[#1A1816] transition group-hover:bg-[#201D1A] sm:h-[280px] lg:w-[560px] lg:h-[380px] lg:shrink-0" />
           <div className="flex flex-col justify-center grow gap-5">
             <div className="flex items-center gap-3">
               <span className="flex items-center rounded-[100px] py-1.5 px-3.5 bg-[#C9A96E1F]">
@@ -122,7 +123,7 @@ export default function BlogPage() {
                 {featuredPost.date}
               </span>
             </div>
-            <h2 className="font-display text-[36px] tracking-[-0.02em] leading-[1.25] text-[#F2EDE6] group-hover:text-white transition">
+            <h2 className="font-display text-[26px] tracking-[-0.02em] leading-[1.25] text-[#F2EDE6] group-hover:text-white transition sm:text-[30px] lg:text-[36px]">
               {featuredPost.title}
             </h2>
             <p className="text-[16px] leading-[1.6] text-[#8A837A] font-light">
@@ -142,7 +143,7 @@ export default function BlogPage() {
       </section>
 
       {/* Latest Posts Divider */}
-      <div className="flex items-center pt-[60px] mx-auto max-w-[1200px] px-20">
+      <div className="flex items-center pt-[60px] mx-auto max-w-[1200px] px-5 sm:px-8 lg:px-20">
         <span className="text-[13px] uppercase tracking-widest leading-none text-[#C9A96E] font-medium">
           Latest Posts
         </span>
@@ -150,7 +151,7 @@ export default function BlogPage() {
       </div>
 
       {/* Posts Grid */}
-      <section className="mx-auto max-w-[1200px] px-20 pt-10 pb-0">
+      <section className="mx-auto max-w-[1200px] px-5 sm:px-8 lg:px-20 pt-10 pb-0">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <PostCard key={post.slug} post={post} />
