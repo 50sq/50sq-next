@@ -54,7 +54,7 @@ export default function Page() {
         <div className="flex items-center gap-2 rounded-[100px] border border-[#C9A96E66] px-4 py-2">
           <div className="size-1.5 shrink-0 rounded-full bg-[#C9A96E]" />
           <span className="font-sans text-[13px] leading-none font-medium tracking-widest text-[#C9A96E] uppercase">
-            NOW IN BETA
+            EARLY ACCESS
           </span>
         </div>
         <div className="flex max-w-[960px] flex-col items-center">
@@ -66,8 +66,8 @@ export default function Page() {
           </h1>
         </div>
         <p className="max-w-140 text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[18px] lg:text-[20px] lg:leading-8">
-          Lightning-fast uploads, smart organization, secure client galleries, and a built-in storefront — everything a
-          working photographer needs.
+          Lightning-fast uploads, smart organization, secure client galleries, and a built-in storefront. Built by a
+          working photographer, for working photographers.
         </p>
       </section>
 
@@ -84,10 +84,10 @@ export default function Page() {
           </span>
         </Link>
         <Link
-          href="#examples"
+          href="#pricing"
           className="flex w-full items-center justify-center rounded-[100px] border border-[#C9A96E4D] px-8 py-3.5 sm:w-auto sm:px-10 sm:py-4"
         >
-          <span className="font-sans text-[15px] leading-5 tracking-[0.01em] text-[#F2EDE6] sm:text-[16px]">See Demo Gallery</span>
+          <span className="font-sans text-[15px] leading-5 tracking-[0.01em] text-[#F2EDE6] sm:text-[16px]">See Pricing</span>
         </Link>
       </section>
 
@@ -113,10 +113,10 @@ export default function Page() {
             Less admin. More shooting.
           </h2>
           <p className="text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[18px]">
-            Everything you need to deliver, sell, and showcase your work — without the tech headaches.
+            Everything you need to deliver, sell, and showcase your work. No tech headaches.
           </p>
         </div>
-        <div className="flex w-full flex-col items-center gap-5 lg:flex-row lg:justify-center lg:gap-6 lg:px-20">
+        <div className="flex w-full flex-col items-center gap-5 lg:flex-row lg:items-stretch lg:justify-center lg:gap-6 lg:px-20">
           {/* Card: Client Galleries */}
           <div className="flex w-full flex-col gap-6 rounded-2xl border border-[#1F1D1B] bg-[#141414] p-6 shadow-[0_4px_40px_rgba(0,0,0,0.4)] sm:p-10 lg:w-[380px] lg:shrink-0">
             <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#C9A96E]">
@@ -131,8 +131,8 @@ export default function Page() {
                 Client Galleries
               </h3>
               <p className="font-sans text-[16px] leading-[26px] font-light text-[#8A837A]">
-                Beautiful, password-protected galleries your clients will love. Easy selecting, downloading, and sharing
-                — all on your domain.
+                Beautiful, password-protected galleries your clients will love. Easy selecting, downloading, and sharing,
+                all on your domain.
               </p>
             </div>
           </div>
@@ -140,8 +140,10 @@ export default function Page() {
           <div className="flex w-full flex-col gap-6 rounded-2xl border border-[#1F1D1B] bg-[#141414] p-6 shadow-[0_4px_40px_rgba(0,0,0,0.4)] sm:p-10 lg:w-[380px] lg:shrink-0">
             <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#C9A96E]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="9" stroke="#0A0A0A" strokeWidth="1.5" />
-                <path d="M12 8v4l3 3" stroke="#0A0A0A" strokeWidth="1.5" strokeLinecap="round" />
+                <path d="M3 3h18l-2 9H5L3 3z" stroke="#0A0A0A" strokeWidth="1.5" strokeLinejoin="round" />
+                <path d="M5 12l-1 5h14l1-5" stroke="#0A0A0A" strokeWidth="1.5" strokeLinejoin="round" />
+                <circle cx="9" cy="20" r="1" fill="#0A0A0A" />
+                <circle cx="17" cy="20" r="1" fill="#0A0A0A" />
               </svg>
             </div>
             <div className="flex flex-col gap-3">
@@ -149,8 +151,8 @@ export default function Page() {
                 Sales & Ecommerce
               </h3>
               <p className="font-sans text-[16px] leading-[26px] font-light text-[#8A837A]">
-                Turn on sales with one flip of a switch. Sell prints, albums, and digital downloads directly from your
-                galleries.
+                Sell prints, albums, and digital downloads directly from your galleries. You keep 100% of the revenue.
+                Zero commission, ever.
               </p>
             </div>
           </div>
@@ -171,11 +173,11 @@ export default function Page() {
             </div>
             <div className="flex flex-col gap-3">
               <h3 className="font-sans text-[22px] leading-7 font-medium tracking-[-0.02em] text-[#F2EDE6]">
-                Customer Portals
+                Client Portal
               </h3>
               <p className="font-sans text-[16px] leading-6.5 font-light text-[#8A837A]">
-                Give each client their own branded portal to view galleries, download files, and manage their orders —
-                all in one place.
+                Give each client their own branded portal to view galleries, download files, and manage their orders.
+                All in one place.
               </p>
             </div>
           </div>
@@ -189,17 +191,17 @@ export default function Page() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-[#C9A96E]/[0.02] to-transparent" />
         <div className="flex flex-col items-center gap-2">
           <span className="font-display text-[40px] leading-[1.1] font-light tracking-[-0.04em] text-[#F2EDE6] sm:text-[48px] lg:text-[72px] lg:leading-18">
-            560 GB
+            0%
           </span>
           <span className="font-sans text-[13px] leading-4.5 font-light tracking-[0.06em] text-[#8A837A] uppercase sm:text-[14px]">
-            Images Stored
+            Commission
           </span>
         </div>
         <div className="hidden h-20 w-px shrink-0 bg-[#2A2622] sm:block" />
         <div className="flex flex-col items-center gap-2">
-          <span className="font-display text-[40px] leading-[1.1] font-light tracking-[-0.04em] text-[#F2EDE6] sm:text-[48px] lg:text-[72px] lg:leading-18">5m+</span>
+          <span className="font-display text-[40px] leading-[1.1] font-light tracking-[-0.04em] text-[#F2EDE6] sm:text-[48px] lg:text-[72px] lg:leading-18">3–5x</span>
           <span className="font-sans text-[13px] leading-4.5 font-light tracking-[0.06em] text-[#8A837A] uppercase sm:text-[14px]">
-            Photos Delivered
+            Faster Uploads
           </span>
         </div>
         <div className="hidden h-20 w-px shrink-0 bg-[#2A2622] sm:block" />
@@ -247,10 +249,10 @@ export default function Page() {
             THE PLATFORM
           </span>
           <h2 className="font-display text-[28px] leading-[1.15] tracking-[-0.03em] text-[#F2EDE6] sm:text-[36px] lg:text-[48px] lg:leading-14">
-            3–5x faster uploads. Zero headaches.
+            3–5x faster uploads than traditional gallery platforms.
           </h2>
           <p className="font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[17px]">
-            Smart tagging, automatic watermarking, client CRM, and usage analytics — all in a clean interface that stays
+            Smart tagging, automatic watermarking, client CRM, and usage analytics. All in a clean interface that stays
             out of your way.
           </p>
           <div className="flex flex-wrap items-center gap-3">
@@ -302,7 +304,7 @@ export default function Page() {
             From Lightroom to client in seconds.
           </h2>
           <p className="text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[17px]">
-            Our Lightroom Classic plugin exports directly to 50sq. Your clients get a beautiful, branded gallery —
+            Our Lightroom Classic plugin exports directly to 50sq. Your clients get a beautiful, branded gallery
             instantly.
           </p>
         </div>
@@ -487,7 +489,7 @@ export default function Page() {
                 </svg>
               ),
               title: 'Client Proofing',
-              desc: 'Clients mark their favorites directly in the gallery. You see selections in real-time — no more email chains.',
+              desc: 'Clients mark their favorites directly in the gallery. You see selections in real-time. No more email chains.',
             },
             {
               icon: (
@@ -675,7 +677,7 @@ export default function Page() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          SECTION 12: Sharing — Private Link Sharing
+          SECTION 12: Sharing / Private Link Sharing
       ═══════════════════════════════════════════ */}
       <section className="flex w-full flex-col items-center gap-10 px-5 pt-20 sm:px-8 lg:gap-16 lg:px-20 lg:pt-[120px]">
         <div className="flex max-w-[640px] flex-col items-center gap-4">
@@ -686,7 +688,7 @@ export default function Page() {
             Your work. Your rules.
           </h2>
           <p className="text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[17px]">
-            Private sharing, granular permissions, and secure file delivery — all built in. No third-party tools needed.
+            Private sharing, granular permissions, and secure file delivery. All built in, no third-party tools needed.
           </p>
         </div>
 
@@ -709,11 +711,11 @@ export default function Page() {
               </span>
             </div>
             <h3 className="font-display text-[26px] leading-[1.2] tracking-[-0.02em] text-[#F2EDE6] sm:text-[30px] lg:text-[36px] lg:leading-11">
-              Share galleries like you share files — with a private link.
+              Share galleries like you share files. Just a private link.
             </h3>
             <p className="font-sans text-[16px] leading-[26px] font-light text-[#8A837A]">
-              Generate secure, shareable links for any gallery or collection. Clients click and browse instantly — no
-              account creation required. Just like Dropbox, but built for photographers.
+              Generate secure, shareable links for any gallery or collection. Clients click and browse instantly, no
+              account creation required. Like Dropbox, but built for photographers.
             </p>
           </div>
           <div className="flex grow flex-col overflow-clip rounded-2xl border border-[#1F1D1B] shadow-[0_4px_40px_rgba(0,0,0,0.4)]">
@@ -757,7 +759,7 @@ export default function Page() {
           <div className="flex grow flex-col overflow-clip rounded-2xl border border-[#1F1D1B] shadow-[0_4px_40px_rgba(0,0,0,0.4)]">
             <div className="flex items-center border-b border-[#1F1D1B] bg-[#141414] px-6 py-4">
               <span className="font-sans text-[14px] leading-4.5 font-medium text-[#F2EDE6]">
-                Gallery Settings — Chen Wedding
+                Gallery Settings: Chen Wedding
               </span>
             </div>
             <div className="flex flex-col">
@@ -806,7 +808,7 @@ export default function Page() {
             </h3>
             <p className="font-sans text-[16px] leading-[26px] font-light text-[#8A837A]">
               Set permissions per gallery and per client. Control who can download, favorite, purchase, and share.
-              Toggle watermarks, password protection, and visibility — all from one settings panel.
+              Toggle watermarks, password protection, and visibility from one settings panel.
             </p>
           </div>
         </div>
@@ -837,7 +839,7 @@ export default function Page() {
             </h3>
             <p className="font-sans text-[16px] leading-[26px] font-light text-[#8A837A]">
               Store full-resolution archives and RAW files. Generate secure download links with expiration dates, usage
-              limits, and optional password protection. Your clients get exactly what they need — on your terms.
+              limits, and optional password protection. Your clients get exactly what they need, on your terms.
             </p>
           </div>
           <div className="flex grow flex-col overflow-clip rounded-2xl border border-[#1F1D1B] shadow-[0_4px_40px_rgba(0,0,0,0.4)]">
@@ -930,16 +932,16 @@ export default function Page() {
             Analytics
           </span>
           <h2 className="text-center font-display text-[32px] leading-[1.15] tracking-[-0.03em] text-[#F2EDE6] sm:text-[40px] lg:text-[52px] lg:leading-[58px]">
-            Know what&rsquo;s working.
+            Know what&apos;s working.
           </h2>
           <p className="text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[17px]">
-            Track gallery views, client engagement, and revenue — all from one dashboard.
+            Track gallery views, client engagement, and revenue from one dashboard.
           </p>
         </div>
         <div className="flex w-full max-w-[1100px] flex-col overflow-clip rounded-2xl border border-[#1F1D1B] shadow-[0_4px_40px_rgba(0,0,0,0.4)]">
           {/* Header */}
           <div className="flex items-center justify-between border-b border-[#1F1D1B] bg-[#141414] px-6 py-4">
-            <span className="font-sans text-[14px] leading-4.5 font-medium text-[#F2EDE6]">Dashboard — March 2026</span>
+            <span className="font-sans text-[14px] leading-4.5 font-medium text-[#F2EDE6]">Dashboard / March 2026</span>
             <div className="flex gap-2">
               <div className="flex items-center rounded-md bg-[#C9A96E1F] px-3.5 py-1.5">
                 <span className="font-sans text-[12px] leading-none font-medium text-[#C9A96E]">This Month</span>
@@ -1019,7 +1021,7 @@ export default function Page() {
           </h2>
           <p className="font-sans text-[16px] leading-[26px] font-light text-[#8A837A]">
             Invite second shooters, editors, and studio managers with role-based access. Everyone sees exactly what they
-            need — nothing more.
+            need. Nothing more.
           </p>
         </div>
         <div className="flex grow flex-col overflow-clip rounded-2xl border border-[#1F1D1B] shadow-[0_4px_40px_rgba(0,0,0,0.4)]">
@@ -1107,10 +1109,10 @@ export default function Page() {
             Roadmap
           </span>
           <h2 className="text-center font-display text-[32px] leading-[1.15] tracking-[-0.03em] text-[#F2EDE6] sm:text-[40px] lg:text-[52px] lg:leading-[58px]">
-            We&rsquo;re just getting started.
+            We&apos;re just getting started.
           </h2>
           <p className="text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[17px]">
-            Here&rsquo;s what&rsquo;s coming next. Built by photographers, for photographers.
+            Here&apos;s what&apos;s coming next. Built by photographers, for photographers.
           </p>
         </div>
         <div className="flex w-full max-w-[1000px] flex-col px-0 sm:px-8 lg:px-20">
@@ -1127,7 +1129,7 @@ export default function Page() {
                 </svg>
               ),
               title: 'Portfolio Websites',
-              desc: 'Beautiful, fast portfolio sites that live alongside your galleries and storefront — all under one domain. No more juggling Squarespace and a separate gallery tool.',
+              desc: 'Beautiful, fast portfolio sites that live alongside your galleries and storefront, all under one domain. No more juggling Squarespace and a separate gallery tool.',
             },
             {
               status: 'Planned',
@@ -1148,7 +1150,7 @@ export default function Page() {
                 </svg>
               ),
               title: 'Custom Forms',
-              desc: 'Embeddable forms for client booking, inquiries, and questionnaires. Capture leads directly on your portfolio site or share a link — responses go straight to your dashboard.',
+              desc: 'Embeddable forms for client booking, inquiries, and questionnaires. Capture leads directly on your portfolio site or share a link. Responses go straight to your dashboard.',
             },
             {
               status: 'Planned',
@@ -1163,7 +1165,7 @@ export default function Page() {
                 </svg>
               ),
               title: 'Payment Forms',
-              desc: 'Require payment to complete a form submission. Collect deposits, session fees, or retainer payments upfront — no separate invoicing tool needed.',
+              desc: 'Require payment to complete a form submission. Collect deposits, session fees, or retainer payments upfront. No separate invoicing tool needed.',
             },
             {
               status: 'Planned',
@@ -1218,93 +1220,13 @@ export default function Page() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          SECTION 16: Changelog
-      ═══════════════════════════════════════════ */}
-      <section className="flex w-full flex-col items-center gap-8 px-5 pt-20 sm:gap-12 sm:px-8 lg:px-20 lg:pt-[120px]">
-        <div className="flex flex-col items-center gap-4">
-          <span className="font-sans text-[13px] leading-4 font-medium tracking-widest text-[#C9A96E] uppercase">
-            Changelog
-          </span>
-          <h2 className="text-center font-display text-[28px] leading-[1.15] tracking-[-0.02em] text-[#F2EDE6] sm:text-[36px] lg:text-[44px] lg:leading-[50px]">
-            What&rsquo;s new in 50sq
-          </h2>
-        </div>
-        <div className="flex w-full max-w-[800px] flex-col overflow-clip rounded-2xl border border-[#1F1D1B] shadow-[0_4px_40px_rgba(0,0,0,0.4)]">
-          {[
-            {
-              date: 'Mar 10',
-              version: 'v2.4.0',
-              title: 'Batch watermark controls',
-              tag: 'New',
-              tagBg: 'bg-[#4CAF501F]',
-              tagColor: 'text-[#4CAF50]',
-              desc: 'Apply or remove watermarks across entire galleries in one click. Supports custom positioning and opacity per gallery.',
-            },
-            {
-              date: 'Mar 4',
-              version: 'v2.3.2',
-              title: 'Lightroom plugin performance boost',
-              tag: 'Improved',
-              tagBg: 'bg-[#C9A96E1F]',
-              tagColor: 'text-[#C9A96E]',
-              desc: 'Upload speeds now 40% faster for RAW files. Improved sync reliability for collections over 500 photos.',
-            },
-            {
-              date: 'Feb 26',
-              version: 'v2.3.0',
-              title: 'Gallery expiration settings',
-              tag: 'New',
-              tagBg: 'bg-[#4CAF501F]',
-              tagColor: 'text-[#4CAF50]',
-              desc: 'Set auto-expiry dates on galleries and download links. Clients get reminders before access expires.',
-            },
-          ].map((entry, i) => (
-            <div key={entry.version} className="flex flex-col gap-2 border-b border-[#1F1D1B] p-4 sm:flex-row sm:items-start sm:gap-5 sm:p-6">
-              <div className="flex w-auto flex-row items-center gap-2 sm:w-[90px] sm:shrink-0 sm:flex-col sm:items-start sm:gap-0.5 sm:pt-0.5">
-                <span className="font-sans text-[13px] leading-4 font-medium text-[#F2EDE6]">{entry.date}</span>
-                <span className="font-sans text-[11px] leading-3.5 font-light text-[#6B6560]">{entry.version}</span>
-              </div>
-              <div className="flex grow flex-col gap-1.5">
-                <div className="flex items-center gap-2.5">
-                  <span className="font-sans text-[15px] leading-4.5 font-medium text-[#F2EDE6]">{entry.title}</span>
-                  <div className={`flex items-center rounded-[100px] px-2 py-1 ${entry.tagBg}`}>
-                    <span
-                      className={`font-sans text-[11px] leading-none font-semibold tracking-wider uppercase ${entry.tagColor}`}
-                    >
-                      {entry.tag}
-                    </span>
-                  </div>
-                </div>
-                <p className="font-sans text-[13px] leading-5 font-light text-[#8A837A]">{entry.desc}</p>
-              </div>
-            </div>
-          ))}
-          {/* View full changelog footer */}
-          <div className="flex items-center justify-center bg-[#141414] px-6 py-5">
-            <Link href="/changelog" className="flex items-center gap-2">
-              <span className="font-sans text-[14px] leading-4.5 text-[#C9A96E]">View full changelog</span>
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path
-                  d="M5 3l4 4-4 4"
-                  stroke="#C9A96E"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════
-          SECTION 17: CTA
+          SECTION 16: CTA
       ═══════════════════════════════════════════ */}
       <section className="relative mt-16 w-full overflow-hidden bg-[#141414] lg:mt-[120px]">
         <div className="pointer-events-none absolute top-0 left-1/2 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-[#C9A96E] opacity-[0.04] blur-[120px]" />
         <div className="relative mx-auto flex max-w-[1200px] flex-col items-center gap-8 px-5 py-16 sm:px-8 lg:gap-10 lg:px-20 lg:py-[120px]">
           <h2 className="max-w-[700px] text-center font-display text-[32px] leading-[1.15] font-light tracking-[-0.03em] text-[#F2EDE6] sm:text-[40px] lg:text-[60px] lg:leading-[68px]">
-            Start growing your photography business today.
+            Your photos deserve a better platform.
           </h2>
           <p className="max-w-[480px] text-center font-sans text-[16px] leading-7 font-light text-[#8A837A] sm:text-[18px]">
             14-day free trial. No credit card required. Cancel anytime.
@@ -1317,10 +1239,10 @@ export default function Page() {
               <span className="font-sans text-[15px] leading-5 font-medium text-[#0A0A0A] sm:text-[16px]">Start Free Trial</span>
             </Link>
             <Link
-              href="#"
+              href="#features"
               className="flex w-full items-center justify-center rounded-[100px] border border-[#C9A96E4D] px-8 py-3.5 sm:w-auto sm:px-11 sm:py-4"
             >
-              <span className="font-sans text-[15px] leading-5 text-[#F2EDE6] sm:text-[16px]">Book a Demo</span>
+              <span className="font-sans text-[15px] leading-5 text-[#F2EDE6] sm:text-[16px]">See What&apos;s Inside</span>
             </Link>
           </div>
         </div>
